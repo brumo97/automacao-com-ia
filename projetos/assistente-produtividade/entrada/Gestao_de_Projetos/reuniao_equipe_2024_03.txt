@@ -1,0 +1,27 @@
+ATA DE REUNIÃO — EQUIPE DE PROJETOS
+Data: 15 de março de 2024
+Participantes: Ana Paula (líder), Carlos Mendes, Fernanda Lima, Ricardo Torres
+
+PAUTA
+1. Atualização do projeto Transformação Digital
+2. Definição de responsabilidades Q2
+3. Próximos passos
+
+DISCUSSÃO
+
+1. Projeto Transformação Digital
+Carlos apresentou o status atual: 60% concluído. Principais pendências são a integração com o sistema legado e os testes de homologação. Prazo mantido para 30 de abril.
+
+2. Responsabilidades Q2
+- Ana Paula: coordenação geral e comunicação com stakeholders
+- Carlos: integração técnica e testes
+- Fernanda: documentação e treinamento dos usuários
+- Ricardo: suporte e monitoramento pós-implantação
+
+3. Próximos passos
+- Carlos envia relatório técnico até 22/03
+- Fernanda finaliza manual do usuário até 28/03
+- Próxima reunião: 29 de março, 14h
+
+ENCERRAMENTO
+Reunião encerrada às 16h30. Próxima reunião confirmada.

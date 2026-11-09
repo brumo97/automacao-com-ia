@@ -1,0 +1,24 @@
+Arquivo processado: ideias_conteudo_redes.txt
+Tipo identificado: Outro (planejamento de conteúdo)
+Salvo em: /saidas/resumo_ideias_conteudo_redes.txt
+
+RESUMO — IDEIAS DE CONTEÚDO PARA REDES SOCIAIS
+Fonte: entrada/Marketing_Digital/ideias_conteudo_redes.txt
+Criado em: março 2024 | Responsável: time de marketing
+
+STATUS DAS 7 PEÇAS
+- Instagram (3): carrossel bastidores (rascunho), reels dica de produtividade (ideia), depoimento de cliente (aguardando aprovação)
+- LinkedIn (2): artigo tendências 2024 (em produção), vaga dev front-end (aguardando RH)
+- YouTube (2): "Como usamos IA no processo criativo" (ideia, roteiro não iniciado), "Tour pelo escritório" (em produção, roteiro 50%, gravação semana de 25/03)
+
+Resumo: 2 em produção, 1 rascunho, 2 aguardando aprovação de terceiros, 2 só ideia
+
+BLOQUEIOS
+- Depoimento: confirmar com comercial quem autoriza
+- Vaga: RH confirmar abertura
+
+PENDÊNCIAS GERAIS
+- Definir calendário editorial de abril
+- Aprovar paleta de cores para stories
+- Contratar fotógrafo para 22/03
+- Revisar bio do Instagram

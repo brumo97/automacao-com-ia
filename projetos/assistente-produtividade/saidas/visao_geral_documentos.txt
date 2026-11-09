@@ -1,0 +1,96 @@
+VISÃO GERAL DOS DOCUMENTOS — PASTA ENTRADA
+Gerado em: 03/11/2026 | 7 arquivos analisados
+
+======================================================================
+reuniao_equipe_2024_03.txt  (Gestao_de_Projetos)
+======================================================================
+Ata da reunião da equipe de projetos de 15/03/2024, com Ana Paula (líder), Carlos, Fernanda e Ricardo.
+Projeto Transformação Digital 60% concluído; prazo de 30/04 mantido; pendências: integração com sistema legado e homologação.
+Responsabilidades do Q2 divididas entre os quatro; próxima reunião em 29/03, às 14h.
+
+======================================================================
+anotacoes_curso_ia.txt  (Inteligencia_Artificial)
+======================================================================
+Anotações pessoais de 4 aulas de um curso de IA aplicada, iniciado em março de 2024.
+Temas: o que é IA, funcionamento de LLMs (temperatura, previsão da próxima palavra), prompt engineering e ferramentas de mercado.
+Conclusão do autor: não existe melhor ferramenta, e sim a ferramenta certa para cada tarefa; há 3 pendências de estudo.
+
+======================================================================
+cowork_agente_local.png  (Inteligencia_Artificial)
+======================================================================
+Imagem (1200x800): diagrama do "Módulo 2 — Cowork na sua máquina".
+Mostra o Claude Cowork no centro, conectado a /entrada, /saidas, Skills, Google Drive e Gmail.
+Mensagem: "O Claude age nos seus arquivos — local e na nuvem". Material ilustrativo, sem itens de ação.
+
+======================================================================
+briefing_projeto_site.txt  (Marketing_Digital)
+======================================================================
+Briefing de 10/03/2024 para o redesign do site institucional da Empresa XYZ Ltda (responsável: Mariana Costa).
+Meta: +25% na conversão de leads em 6 meses; público: empresas de 50 a 500 funcionários, decisores de TI.
+Escopo: home, 6 páginas de produto, cases, formulário e versão mobile; orçamento de R$ 45.000; lançamento em 25/05/2024.
+
+======================================================================
+contrato_servicos.txt  (Marketing_Digital)
+======================================================================
+Contrato nº 2024/042 entre Empresa ABC Comércio Ltda (contratante) e Agência Digital XYZ Ltda (contratada).
+Objeto: gestão de redes sociais (Instagram, LinkedIn, YouTube) — 12 + 8 posts e 2 vídeos por mês, relatório e reunião mensais.
+R$ 8.500/mês, vencimento dia 10; vigência 01/04/2024 a 31/03/2025 com renovação automática; rescisão com 30 dias, sem multa.
+
+======================================================================
+ideias_conteudo_redes.txt  (Marketing_Digital)
+======================================================================
+Lista de ideias de conteúdo do time de marketing (março de 2024) para Instagram, LinkedIn e YouTube.
+7 peças em estágios diferentes: 2 em produção, 2 ideias, 1 rascunho e 2 aguardando aprovação/confirmação.
+Inclui pendências gerais: calendário editorial de abril, paleta dos stories, fotógrafo e bio do Instagram.
+
+======================================================================
+relatorio_mensal_vendas.txt  (Vendas)
+======================================================================
+Relatório comercial de fevereiro de 2024: total de R$ 647.800 contra meta de R$ 690.000 (93,9% atingido).
+Crescimento de 12% sobre o ano anterior; Norte cresceu mais (+22%) e Centro-Oeste caiu (-3%).
+Produto A lidera com 34% das vendas; ações definidas para março.
+
+======================================================================
+ITENS DE AÇÃO ENCONTRADOS
+======================================================================
+Reunião da equipe (reuniao_equipe_2024_03.txt)
+- [ ] Carlos: enviar relatório técnico — até 22/03
+- [ ] Fernanda: finalizar manual do usuário — até 28/03
+- [ ] Equipe: próxima reunião — 29/03, 14h
+- [ ] Carlos: concluir integração com sistema legado e testes de homologação — entrega do projeto em 30/04
+
+Curso de IA (anotacoes_curso_ia.txt)
+- [ ] Testar Claude com documento longo
+- [ ] Comparar respostas ChatGPT vs Claude no mesmo prompt
+- [ ] Assistir aula bônus sobre automação
+- [ ] Testar o Claude com temperatura alta e baixa (anotado na aula 2)
+
+Redesign do site (briefing_projeto_site.txt)
+- [ ] Aprovação do briefing — 15/03
+- [ ] Entrega do wireframe — 05/04
+- [ ] Aprovação do layout — 20/04
+- [ ] Desenvolvimento — 21/04 a 20/05
+- [ ] Lançamento — 25/05/2024
+
+Contrato (contrato_servicos.txt)
+- [ ] Decidir sobre renovação: notificar com 30 dias de antecedência do término caso não se queira renovar
+
+Conteúdo para redes (ideias_conteudo_redes.txt)
+- [ ] Definir calendário editorial de abril
+- [ ] Aprovar paleta de cores para stories
+- [ ] Contratar fotógrafo para 22/03
+- [ ] Revisar bio do Instagram
+- [ ] Verificar com o comercial quem autoriza o depoimento de cliente (Instagram, post 3)
+- [ ] Aguardar confirmação do RH sobre a vaga de desenvolvedor front-end (LinkedIn, post 2)
+- [ ] Definir legenda do reels de produtividade (Instagram, post 2)
+- [ ] Iniciar roteiro do vídeo "Como usamos IA no nosso processo criativo" (YouTube)
+- [ ] Gravar o vídeo "Tour pelo nosso escritório" — semana de 25/03 (roteiro 50% pronto)
+
+Vendas (relatorio_mensal_vendas.txt)
+- [ ] Reforçar a equipe na região Centro-Oeste
+- [ ] Campanha promocional do Produto B
+- [ ] Revisar metas regionais com base no desempenho do Q1
+- [ ] Concluir análise do Centro-Oeste abaixo da meta (em andamento)
+- [ ] Próximo relatório — 05/03/2024
+
+Total: 28 itens de ação | Diagrama (cowork_agente_local.png): nenhum item de ação.

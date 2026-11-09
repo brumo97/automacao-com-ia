@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Resumo executivo — Finanças Jan a Jun 2024</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🧭%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem('rf-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
+<style>
+:root{
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+  --bg:#EDF0F4; --surface:#FFFFFF; --surface-2:#F5F7FA; --ink:#0D1B2A; --ink-2:#4A5A6E; --line:#D5DBE3;
+  --brass:#8F6616; --pos:#0B7A66; --neg:#B02E27; --heat:143,102,22; --bar-bg:rgba(237,240,244,.86);
+  --serif:"Instrument Serif","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark; --bg:#0A1522; --surface:#0F1F33; --surface-2:#132840; --ink:#E9EEF5; --ink-2:#9FB0C4; --line:#223853;
+  --brass:#E0B965; --pos:#47CDB3; --neg:#FF7A6B; --heat:224,185,101; --bar-bg:rgba(10,21,34,.86);}}
+:root[data-theme="dark"]{
+  color-scheme:dark; --bg:#0A1522; --surface:#0F1F33; --surface-2:#132840; --ink:#E9EEF5; --ink-2:#9FB0C4; --line:#223853;
+  --brass:#E0B965; --pos:#47CDB3; --neg:#FF7A6B; --heat:224,185,101; --bar-bg:rgba(10,21,34,.86);}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0; background:var(--bg); color:var(--ink); font:1rem/1.6 var(--sans); font-variant-numeric:tabular-nums; -webkit-font-smoothing:antialiased}
+body::before{content:""; position:fixed; inset:0 0 auto; height:env(safe-area-inset-top,0px); z-index:30; background:var(--bar-bg); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px)}
+:focus-visible{outline:2px solid var(--brass); outline-offset:3px; border-radius:3px}
+.wrap{max-width:1080px; margin-inline:auto; padding-inline:clamp(1rem,4vw,2.5rem)}
+.bar{position:sticky; top:env(safe-area-inset-top,0px); z-index:20; background:var(--bar-bg); border-bottom:1px solid var(--line); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px)}
+.bar .wrap{display:flex; align-items:center; justify-content:space-between; gap:1rem; min-height:58px}
+.brand{font-family:var(--serif); font-size:1.3rem}
+.actions{display:flex; gap:.5rem; align-items:center}
+.btn{font:600 .8rem/1 var(--sans); color:var(--ink); background:transparent; border:1px solid var(--line); border-radius:999px; padding:.55rem .9rem; cursor:pointer; text-decoration:none; white-space:nowrap}
+.btn:hover{border-color:var(--brass)}
+.btn.main{background:var(--ink); color:var(--surface); border-color:var(--ink)}
+h1,h2,h3{font-family:var(--serif); font-weight:400; margin:0; letter-spacing:-.01em}
+.hero{--ink:#E9EEF5; --ink-2:#9FB0C4; --line:#223853; --pos:#47CDB3; --neg:#FF7A6B; --brass:#E0B965; --surface-2:#132840;
+  background:#0B1A2C; color:var(--ink); border-bottom:1px solid var(--brass); padding-block:clamp(2.25rem,5vw,3.75rem)}
+.meta{margin:0 0 1rem; color:var(--ink-2); font-size:.9rem}
+h1{font-size:clamp(2.2rem,5.2vw,3.8rem); line-height:1.05; max-width:20ch}
+.lead{max-width:60ch; color:var(--ink-2); font-size:1.06rem; margin:1.1rem 0 0}
+.lead strong{color:var(--ink); font-weight:600}
+#chart{margin-top:2.25rem}
+#chart svg{display:block; width:100%; height:auto; overflow:visible}
+.cap{margin:.75rem 0 0; color:var(--ink-2); font-size:.86rem}
+.neg{color:var(--neg)} .pos{color:var(--pos)}
+section.sec{padding-block:clamp(2.5rem,5vw,3.75rem); border-top:1px solid var(--line)}
+.hero + .sec{border-top:0}
+.sec h2{font-size:clamp(1.8rem,3.4vw,2.5rem); line-height:1.1}
+.intro{color:var(--ink-2); max-width:62ch; margin:.7rem 0 1.75rem}
+.facts{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden}
+.fact{background:var(--surface); padding:1.5rem clamp(1.1rem,3vw,1.75rem)}
+.fact .n{font-family:var(--serif); font-size:clamp(2.2rem,4.4vw,3rem); line-height:1}
+.fact h3{font-family:var(--sans); font-weight:700; font-size:.98rem; letter-spacing:0; margin:.55rem 0 .3rem}
+.fact p{margin:0; color:var(--ink-2); font-size:.93rem}
+.alerts{list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.5rem}
+.alerts li{border-top:3px solid var(--neg); padding-top:.9rem}
+.alerts b{display:block; font-size:1rem}
+.alerts .v{font-family:var(--serif); font-size:1.9rem; line-height:1.1; color:var(--neg); display:block; margin:.25rem 0}
+.alerts span{color:var(--ink-2); font-size:.9rem}
+ol.plan{list-style:none; margin:0; padding:0; counter-reset:p}
+ol.plan li{counter-increment:p; display:grid; grid-template-columns:3rem 1fr auto; gap:1rem; align-items:baseline; padding:1.1rem 0; border-top:1px solid var(--line)}
+ol.plan li::before{content:counter(p); font-family:var(--serif); font-size:2rem; line-height:1; color:var(--brass)}
+ol.plan li.zero{counter-increment:none}
+ol.plan li.zero::before{content:"0"}
+ol.plan b{display:block}
+ol.plan span{color:var(--ink-2); font-size:.92rem}
+ol.plan em{font-style:normal; font-weight:700; white-space:nowrap}
+.gap{margin:1.5rem 0 0; padding:1rem 1.2rem; border-left:3px solid var(--brass); background:rgba(var(--heat),.10); max-width:78ch}
+footer{border-top:1px solid var(--line); padding-block:2rem 3rem; color:var(--ink-2); font-size:.85rem}
+footer p{max-width:80ch; margin:.35rem 0}
+@media (max-width:820px){
+  .facts{grid-template-columns:1fr}
+  .alerts{grid-template-columns:1fr}
+  ol.plan li{grid-template-columns:2.2rem 1fr}
+  ol.plan em{grid-column:2}
+}
+@media (max-width:520px){.btn.theme{display:none}}
+@media print{
+  body::before,.bar{display:none}
+  :root,:root[data-theme="dark"]{--bg:#fff; --surface:#fff; --ink:#0D1B2A; --ink-2:#4A5A6E; --line:#cfd6de; --brass:#8F6616; --pos:#0B7A66; --neg:#B02E27; --heat:143,102,22}
+  .hero,.gap{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+  section{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <span class="brand">Resumo executivo</span>
+    <div class="actions">
+      <button class="btn theme" id="themeBtn" type="button" aria-label="Alternar tema claro e escuro">Tema</button>
+      <a class="btn main" id="fullLink" href="relatorio-financeiro-completo.html">Abrir relatório completo</a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero" aria-labelledby="h1">
+    <div class="wrap">
+      <p class="meta">Finanças de janeiro a junho de 2024. Leitura de dois minutos. Gerado em 9 de novembro de 2026.</p>
+      <h1 id="h1">Em cinco dos seis meses, saiu mais dinheiro do que entrou.</h1>
+      <p class="lead">O semestre fechou com <strong>−R$ 2.920,83</strong>. O problema não é um mês ruim: a despesa média de <strong>R$ 6.520,14</strong> fica acima do salário de <strong>R$ 5.800</strong> que se repete na maioria dos meses.</p>
+      <div id="chart"></div>
+      <p class="cap">Saldo de cada mês (receita menos despesas). Barra vermelha para baixo: faltou dinheiro. Barra verde para cima: sobrou.</p>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-facts">
+    <div class="wrap">
+      <h2 id="h-facts">Os quatro números que importam</h2>
+      <p class="intro">Cada número vem com o que ele quer dizer na prática.</p>
+      <div class="facts">
+        <article class="fact"><span class="n neg">−R$ 2.920,83</span><h3>Saldo do semestre</h3><p>Em seis meses, os gastos superaram a receita nesse valor. Só junho fechou positivo, por causa de um bônus.</p></article>
+        <article class="fact"><span class="n neg">−8,1%</span><h3>Taxa de poupança</h3><p>A meta é guardar 20% do que entra. Nenhum mês chegou perto; o melhor foi junho, com 6,0%.</p></article>
+        <article class="fact"><span class="n">R$ 720,14</span><h3>Falta por mês, em média</h3><p>Diferença entre a despesa média e o salário recorrente. É um déficit de patamar, que se repete todo mês.</p></article>
+        <article class="fact"><span class="n">56,9%</span><h3>Peso de moradia e alimentação</h3><p>Mais da metade dos gastos está em duas categorias estáveis. São elas que definem o patamar de despesa.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-alerts">
+    <div class="wrap">
+      <h2 id="h-alerts">O que causou os picos</h2>
+      <p class="intro">Três gastos saltaram 20% ou mais acima da média dos três meses anteriores.</p>
+      <ul class="alerts">
+        <li><b>Outros, abril</b><span class="v">+144%</span><span>R$ 788,32, sendo R$ 555,82 de um eletrônico.</span></li>
+        <li><b>Lazer, maio</b><span class="v">+81%</span><span>R$ 774,85, com viagem (R$ 335,38) e restaurante (R$ 270,66).</span></li>
+        <li><b>Educação, maio</b><span class="v">+40%</span><span>R$ 423,29, com livros e material além das mensalidades.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-plan">
+    <div class="wrap">
+      <h2 id="h-plan">O que fazer, em ordem</h2>
+      <p class="intro">Primeiro zerar o déficit, depois mirar os 20%. Valores calculados sobre a receita média de R$ 6.033,33.</p>
+      <ol class="plan">
+        <li class="zero"><div><b>Atualizar a planilha</b><span>Os dados são de 2024. Com os 3 meses mais recentes, todos os valores abaixo podem ser recalculados.</span></div><em>antes de tudo</em></li>
+        <li><div><b>Meta do passo 1: saldo zero</b><span>Cortar 7,5% da despesa média. Medir: saldo ≥ 0 por 3 meses seguidos.</span></div><em>−R$ 486,81/mês</em></li>
+        <li><div><b>Teto para Outros e Lazer</b><span>Teto na mediana do semestre (R$ 400,09 e R$ 496,97).</span></div><em>R$ 191,98/mês</em></li>
+        <li><div><b>Alimentação 10% menor</b><span>Ficar abaixo de R$ 1.130,25 por mês.</span></div><em>R$ 125,58/mês</em></li>
+        <li><div><b>Extras direto para a reserva</b><span>Freela e bônus somaram R$ 1.400 no semestre.</span></div><em>protege o resultado</em></li>
+      </ol>
+      <p class="gap"><strong>Conta honesta:</strong> as ações 2 e 3 somam R$ 317,56 por mês, 65% do passo 1. Os R$ 169,25 restantes pedem outra alavanca: evitar compras como os eletrônicos de março a maio (R$ 1.164,51), mexer em moradia ou aumentar a receita recorrente.</p>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Fonte: planilha financas_pessoais_2024.xlsx e relatório anterior do projeto (08/11/2026), com todos os números conferidos. Detalhes, método e regras no relatório completo.</p>
+    <p>Este resumo descreve os dados e não é recomendação financeira ou de investimento.</p>
+  </div>
+</footer>
+<script>
+(function(){
+'use strict';
+var FULL_URL='relatorio-financeiro-completo.html';
+var link=document.getElementById('fullLink');
+if(location.protocol!=='file:'){link.href=FULL_URL; link.target='_blank'; link.rel='noopener';}
+
+var meses=['Jan','Fev','Mar','Abr','Mai','Jun'];
+var saldo=[-349.99,-553.90,-539.99,-1018.22,-868.81,410.08];
+var nf=new Intl.NumberFormat('pt-BR',{maximumFractionDigits:0});
+function lab(n){return (n<0?'−':'+')+nf.format(Math.abs(n));}
+function draw(){
+  var el=document.getElementById('chart'),W=Math.max(300,Math.round(el.clientWidth||720)),H=250;
+  var L=4,R=4,Tp=26,ymin=-1150,ymax=560,Hp=180,sc=Hp/(ymax-ymin);
+  function y(v){return Tp+(ymax-v)*sc;}
+  var slot=(W-L-R)/6,bw=Math.min(56,slot*.56);
+  var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Saldo mensal de janeiro a junho: '+saldo.map(function(v,i){return meses[i]+' '+lab(v)+' reais';}).join(', ')+'">';
+  s+='<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y(0)+'" y2="'+y(0)+'" stroke="var(--ink-2)" stroke-width="1.25"/>';
+  for(var i=0;i<6;i++){
+    var v=saldo[i],cx=L+slot*i+slot/2,top=v>=0?y(v):y(0),h=Math.abs(y(v)-y(0)),col=v>=0?'var(--pos)':'var(--neg)';
+    s+='<rect x="'+(cx-bw/2)+'" y="'+top+'" width="'+bw+'" height="'+h+'" rx="2" style="fill:'+col+'"/>';
+    var ty=v>=0?top-9:top+h+17;
+    s+='<text x="'+cx+'" y="'+ty+'" text-anchor="middle" style="fill:'+col+';font:700 12.5px var(--sans)">'+lab(v)+'</text>';
+    s+='<text x="'+cx+'" y="'+(H-4)+'" text-anchor="middle" style="fill:var(--ink-2);font:600 12.5px var(--sans)">'+meses[i]+'</text>';
+  }
+  el.innerHTML=s+'</svg>';
+}
+draw();
+var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(draw,140);});
+document.getElementById('themeBtn').addEventListener('click',function(){
+  var root=document.documentElement,cur=root.getAttribute('data-theme');
+  var dark=cur?cur==='dark':(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+  var next=dark?'light':'dark';root.setAttribute('data-theme',next);
+  try{localStorage.setItem('rf-theme',next);}catch(e){}
+});
+})();
+</script>
+</body>
+</html>

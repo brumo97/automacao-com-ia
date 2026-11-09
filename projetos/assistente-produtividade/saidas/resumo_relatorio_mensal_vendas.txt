@@ -1,0 +1,50 @@
+Arquivo processado: relatorio_mensal_vendas.txt
+Tipo identificado: Relatório
+Salvo em: /saidas/resumo_relatorio_mensal_vendas.txt
+Data de processamento: 06/11/2026
+
+RESUMO — RELATÓRIO MENSAL DE VENDAS
+Período: Fevereiro 2024
+Elaborado por: Departamento Comercial
+Fonte: /entrada/Vendas/relatorio_mensal_vendas.txt
+
+NÚMEROS-CHAVE
+- Total geral: R$ 647.800
+- Meta do mês: R$ 690.000
+- Atingimento: 93,9% (o resumo executivo arredonda para 94%)
+- Diferença para a meta: R$ 42.200 abaixo (cálculo a partir do relatório)
+- Crescimento vs. fevereiro 2023: +12%
+
+RESULTADOS POR REGIÃO (participação no total calculada a partir do relatório)
+- Sudeste: R$ 284.500 — ↑ 18% — 43,9% do total
+- Sul: R$ 156.200 — ↑ 8% — 24,1% do total
+- Nordeste: R$ 98.700 — ↑ 5% — 15,2% do total
+- Centro-Oeste: R$ 67.300 — ↓ 3% — 10,4% do total
+- Norte: R$ 41.100 — ↑ 22% — 6,3% do total
+
+PRODUTOS MAIS VENDIDOS
+1. Produto A — R$ 220.252 — 34% do total
+2. Produto B — R$ 181.384 — 28% do total
+3. Produto C — R$ 129.560 — 20% do total
+4. Produto D — R$ 116.604 — 18% do total
+
+TENDÊNCIAS
+- Crescimento em 4 das 5 regiões; Centro-Oeste é a única em queda (-3%)
+- Norte tem o maior crescimento (+22%), mas é a menor região em valor
+- Sudeste concentra quase metade das vendas e cresceu 18%
+
+DESTAQUES (conforme o relatório)
+- Produto A liderou as vendas com 34% do total
+- Maior crescimento no Norte (+22%)
+- Centro-Oeste abaixo da meta — análise em andamento
+
+AÇÕES PREVISTAS PARA MARÇO
+- Reforço de equipe na região Centro-Oeste
+- Campanha promocional do Produto B
+- Revisão de metas regionais com base no desempenho do Q1
+
+PRÓXIMO RELATÓRIO: 05 de março de 2024
+
+VERIFICAÇÃO
+- Soma das regiões e soma dos produtos conferem com o total de R$ 647.800
+- O relatório não traz as metas por região nem os responsáveis e prazos das ações de março

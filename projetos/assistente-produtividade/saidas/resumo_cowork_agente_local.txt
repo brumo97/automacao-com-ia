@@ -1,0 +1,18 @@
+Arquivo processado: cowork_agente_local.png
+Tipo identificado: Outro (imagem / diagrama)
+Salvo em: /saidas/resumo_cowork_agente_local.txt
+
+RESUMO — DIAGRAMA "MÓDULO 2 — COWORK NA SUA MÁQUINA"
+Fonte: entrada/Inteligencia_Artificial/cowork_agente_local.png
+
+DESCRIÇÃO
+Diagrama circular com "Claude Cowork — Agente local" no centro, conectado a 5 elementos:
+- /entrada (arquivos a processar)
+- Skills (instruções reutilizáveis)
+- /saidas (resultados gerados)
+- Google Drive (nuvem)
+- Gmail (nuvem)
+
+MENSAGEM PRINCIPAL
+"O Claude age nos seus arquivos — local e na nuvem."
+Material de aula que ilustra a arquitetura deste próprio projeto.

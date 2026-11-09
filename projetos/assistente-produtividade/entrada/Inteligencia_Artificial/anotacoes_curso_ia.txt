@@ -1,0 +1,41 @@
+ANOTAÇÕES PESSOAIS — CURSO DE IA APLICADA
+Aluno: [nome do aluno]
+Data de início: março de 2024
+
+--- AULA 1 ---
+O que é inteligência artificial na prática
+- IA não é robô, é padrão
+- Aprende com dados históricos
+- Três tipos: narrow AI, general AI, super AI
+- A gente usa narrow AI no dia a dia (Netflix, Spotify, Google Maps)
+dúvida: como o modelo sabe o que é certo ou errado?
+
+--- AULA 2 ---
+Como funcionam os modelos de linguagem
+- LLM = Large Language Model
+- Treinado em bilhões de textos
+- Prevê a próxima palavra, não "pensa"
+- Temperatura: controla criatividade da resposta
+importante: o modelo não acessa internet em tempo real (depende da versão)
+testar: pedir para o Claude explicar algo com temperatura alta e baixa
+
+--- AULA 3 ---
+Prompt engineering básico
+- Contexto + tarefa + formato = prompt eficaz
+- Ser específico funciona melhor que ser genérico
+- Exemplos ajudam muito o modelo a entender o padrão
+frases que funcionam: "aja como", "responda em formato de tabela", "liste 5 exemplos"
+frases que não funcionam: "me fale sobre", "explique tudo sobre"
+
+--- AULA 4 ---
+Ferramentas de IA no trabalho
+- ChatGPT: geral, bom para textos
+- Claude: melhor para documentos longos e raciocínio
+- Gemini: integrado ao Google Workspace
+- Copilot: integrado ao Microsoft 365
+conclusão: não existe melhor ferramenta, existe ferramenta certa para cada tarefa
+
+PENDÊNCIAS
+[ ] Testar Claude com documento longo
+[ ] Comparar respostas ChatGPT vs Claude no mesmo prompt
+[ ] Assistir aula bônus sobre automação

@@ -1,0 +1,45 @@
+Arquivo processado: reuniao_equipe_2024_03.txt
+Tipo identificado: Ata
+Salvo em: /saidas/resumo_reuniao_equipe_2024_03.txt
+
+RESUMO — ATA DE REUNIÃO DA EQUIPE DE PROJETOS
+Data da reunião: 15 de março de 2024 (encerrada às 16h30)
+Fonte: entrada/Gestao_de_Projetos/reuniao_equipe_2024_03.txt
+
+PARTICIPANTES
+- Ana Paula (líder)
+- Carlos Mendes
+- Fernanda Lima
+- Ricardo Torres
+
+PAUTA
+1. Atualização do projeto Transformação Digital
+2. Definição de responsabilidades do Q2
+3. Próximos passos
+
+PONTOS DISCUTIDOS
+1. Projeto Transformação Digital (apresentado por Carlos)
+   - Status atual: 60% concluído
+   - Pendências principais: integração com o sistema legado e testes de homologação
+   - Prazo de entrega mantido para 30 de abril
+
+2. Responsabilidades do Q2
+   - Ana Paula: coordenação geral e comunicação com stakeholders
+   - Carlos: integração técnica e testes
+   - Fernanda: documentação e treinamento dos usuários
+   - Ricardo: suporte e monitoramento pós-implantação
+
+DECISÕES
+- Manter o prazo do projeto Transformação Digital em 30/04
+- Adotar a divisão de responsabilidades do Q2 descrita acima
+- Realizar a próxima reunião em 29/03, às 14h (confirmada no encerramento)
+
+PRÓXIMOS PASSOS
+- Carlos Mendes: enviar relatório técnico — até 22/03
+- Fernanda Lima: finalizar manual do usuário — até 28/03
+- Toda a equipe: próxima reunião — 29/03, 14h
+- Entrega do projeto Transformação Digital — 30/04
+
+PENDÊNCIAS EM ABERTO
+- Integração com o sistema legado (responsável: Carlos, pela área de integração técnica)
+- Testes de homologação (responsável: Carlos, pela área de testes)

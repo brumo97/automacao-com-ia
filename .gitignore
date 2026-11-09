@@ -1,0 +1,31 @@
+# Sistema e editores
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Temporários e dependências
+__pycache__/
+*.py[cod]
+node_modules/
+.venv/
+~$*
+*.tmp
+
+# Configuração local e credenciais
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+client_secret*.json
+token*.json
+*.p12
+*.pfx
+id_rsa*
+.secrets/
+
+# Pacotes e arquivos compactados (o projeto é publicado extraído)
+*.zip

@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Relatório financeiro completo — Jan a Jun 2024</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📊%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+try{var t=localStorage.getItem('rf-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}
+</script>
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+  --bg:#EDF0F4; --surface:#FFFFFF; --surface-2:#F5F7FA;
+  --ink:#0D1B2A; --ink-2:#4A5A6E; --line:#D5DBE3;
+  --brass:#8F6616; --pos:#0B7A66; --neg:#B02E27;
+  --pos-soft:rgba(11,122,102,.10); --neg-soft:rgba(176,46,39,.10);
+  --heat:143,102,22; --heat-max:.5;
+  --bar-bg:rgba(237,240,244,.86);
+  --serif:"Instrument Serif","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0A1522; --surface:#0F1F33; --surface-2:#132840;
+    --ink:#E9EEF5; --ink-2:#9FB0C4; --line:#223853;
+    --brass:#E0B965; --pos:#47CDB3; --neg:#FF7A6B;
+    --pos-soft:rgba(71,205,179,.14); --neg-soft:rgba(255,122,107,.14);
+    --heat:224,185,101; --heat-max:.42;
+    --bar-bg:rgba(10,21,34,.86);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0A1522; --surface:#0F1F33; --surface-2:#132840;
+  --ink:#E9EEF5; --ink-2:#9FB0C4; --line:#223853;
+  --brass:#E0B965; --pos:#47CDB3; --neg:#FF7A6B;
+  --pos-soft:rgba(71,205,179,.14); --neg-soft:rgba(255,122,107,.14);
+  --heat:224,185,101; --heat-max:.42;
+  --bar-bg:rgba(10,21,34,.86);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{
+  margin:0; background:var(--bg); color:var(--ink);
+  font-family:var(--sans); font-size:1rem; line-height:1.6;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+  font-variant-numeric:tabular-nums;
+}
+body::before{
+  content:""; position:fixed; inset:0 0 auto; height:env(safe-area-inset-top,0px);
+  z-index:30; background:var(--bar-bg);
+  -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px);
+}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brass); outline-offset:3px; border-radius:3px}
+
+.wrap{max-width:1120px; margin-inline:auto; padding-inline:clamp(1rem,4vw,2.5rem)}
+
+/* ---------- barra ---------- */
+.bar{
+  position:sticky; top:env(safe-area-inset-top,0px); z-index:20;
+  background:var(--bar-bg); border-bottom:1px solid var(--line);
+  -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px);
+}
+.bar .wrap{display:flex; align-items:center; gap:1.25rem; min-height:60px}
+.brand{font-family:var(--serif); font-size:1.35rem; white-space:nowrap; text-decoration:none}
+.bar nav{display:flex; gap:.25rem; overflow-x:auto; flex:1; scrollbar-width:none}
+.bar nav::-webkit-scrollbar{display:none}
+.bar nav a{
+  color:var(--ink-2); text-decoration:none; font-size:.88rem; font-weight:600;
+  padding:.45rem .7rem; border-radius:6px; white-space:nowrap;
+}
+.bar nav a:hover{color:var(--ink); background:var(--surface-2)}
+.actions{display:flex; gap:.5rem}
+.btn{
+  font:600 .8rem/1 var(--sans); color:var(--ink); background:transparent;
+  border:1px solid var(--line); border-radius:999px; padding:.55rem .9rem; cursor:pointer;
+}
+.btn:hover{border-color:var(--brass)}
+
+/* ---------- hero (sempre azul-noite, em qualquer tema) ---------- */
+.hero{
+  --ink:#E9EEF5; --ink-2:#9FB0C4; --line:#223853; --surface-2:#132840;
+  --pos:#47CDB3; --neg:#FF7A6B; --brass:#E0B965;
+  background:#0B1A2C; color:var(--ink);
+  border-bottom:1px solid var(--brass);
+  padding-block:clamp(2.5rem,6vw,4.5rem) clamp(2.5rem,5vw,3.5rem);
+}
+.meta{margin:0 0 1.25rem; color:var(--ink-2); font-size:.92rem}
+h1,h2,h3{font-family:var(--serif); font-weight:400; margin:0; letter-spacing:-.01em}
+h1{font-size:clamp(2.3rem,5.6vw,4.2rem); line-height:1.04; max-width:21ch}
+.lead{max-width:62ch; color:var(--ink-2); font-size:1.08rem; margin:1.25rem 0 0}
+.lead strong{color:var(--ink); font-weight:600}
+.kpis{display:flex; flex-wrap:wrap; gap:1.5rem clamp(1.5rem,4vw,3.5rem); margin:2.5rem 0 0; padding:1.5rem 0 0; border-top:1px solid var(--line)}
+.kpi dt{color:var(--ink-2); font-size:.85rem; font-weight:500}
+.kpi dd{margin:.15rem 0 0; font-family:var(--serif); font-size:clamp(1.6rem,3vw,2.1rem); line-height:1.1}
+.neg{color:var(--neg)} .pos{color:var(--pos)}
+.chart-head{display:flex; flex-wrap:wrap; justify-content:space-between; align-items:baseline; gap:.5rem 1rem; margin:3rem 0 .75rem}
+.chart-head h2{font-size:clamp(1.4rem,2.6vw,1.8rem)}
+.chart-head p{margin:0; color:var(--ink-2); font-size:.88rem}
+#heroChart svg{display:block; width:100%; height:auto; overflow:visible}
+#heroChart .bar-g{cursor:pointer}
+#heroChart .bar-g rect.b{opacity:.5; transition:opacity .2s}
+#heroChart .bar-g[data-sel="1"] rect.b,#heroChart .bar-g:hover rect.b{opacity:1}
+#heroChart .bar-g:focus-visible{outline:none}
+#heroChart .bar-g:focus-visible rect.b{stroke:var(--brass); stroke-width:3; opacity:1}
+#heroChart .mlabel{fill:var(--ink-2); font:600 13px var(--sans)}
+#heroChart .bar-g[data-sel="1"] .mlabel{fill:var(--brass)}
+#heroChart .vlabel{font:700 12.5px var(--sans)}
+#heroChart .plabel{fill:var(--ink-2); font:500 11.5px var(--sans)}
+#heroChart .grid{stroke:var(--line); stroke-dasharray:3 5}
+#heroChart .zero{stroke:var(--ink-2); stroke-width:1.25}
+#heroChart .axis{fill:var(--ink-2); font:500 11px var(--sans)}
+@keyframes grow{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@media (prefers-reduced-motion:no-preference){
+  #heroChart.rise rect.b{transform-box:fill-box; animation:grow .8s cubic-bezier(.2,.7,.2,1) both; animation-delay:calc(var(--i) * 80ms)}
+  #heroChart.rise .p rect.b{transform-origin:50% 100%}
+  #heroChart.rise .n rect.b{transform-origin:50% 0}
+}
+.detail{margin-top:2rem; padding-top:1.75rem; border-top:1px solid var(--line); display:grid; grid-template-columns:minmax(220px,1fr) 2fr; gap:1.75rem clamp(1.5rem,4vw,3.5rem)}
+.detail h3{font-size:clamp(1.7rem,3vw,2.3rem); line-height:1.1}
+.detail dl{margin:1rem 0 0; display:grid; gap:.55rem}
+.detail dl div{display:flex; justify-content:space-between; gap:1rem; border-bottom:1px solid var(--line); padding-bottom:.45rem}
+.detail dt{color:var(--ink-2); font-size:.92rem}
+.detail dd{margin:0; font-weight:700}
+.crows{display:grid; gap:.7rem; align-content:start}
+.crows h4{margin:0 0 .15rem; font:600 .88rem var(--sans); color:var(--ink-2)}
+.crow{display:grid; grid-template-columns:6.5rem 1fr 8.5rem; gap:.75rem; align-items:center}
+.cname{font-weight:600; font-size:.93rem}
+.ctrack{position:relative; height:8px; background:var(--surface-2); border-radius:2px}
+.cfill{position:absolute; inset:0 auto 0 0; background:var(--brass); border-radius:2px}
+.ctick{position:absolute; top:-4px; bottom:-4px; width:2px; background:var(--ink); opacity:.85}
+.cright{text-align:right; line-height:1.25}
+.cright b{display:block; font-size:.93rem}
+.cright small{font-size:.76rem; font-weight:600}
+.legend-note{grid-column:1/-1; margin:.25rem 0 0; color:var(--ink-2); font-size:.8rem}
+
+/* ---------- seções ---------- */
+.sec{padding-block:clamp(2.75rem,6vw,4.5rem); border-top:1px solid var(--line)}
+.hero + .sec{border-top:0}
+.sec h2{font-size:clamp(1.9rem,3.6vw,2.7rem); line-height:1.1}
+.intro{max-width:64ch; color:var(--ink-2); margin:.9rem 0 2rem}
+.intro strong{color:var(--ink)}
+.scroll-x{overflow-x:auto; -webkit-overflow-scrolling:touch}
+table{width:100%; border-collapse:collapse; font-size:.93rem}
+th{color:var(--ink-2); font-weight:600; font-size:.82rem; text-align:right; padding:.6rem .7rem; border-bottom:1px solid var(--ink-2); white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+td{padding:.8rem .7rem; text-align:right; border-bottom:1px solid var(--line); white-space:nowrap}
+td:first-child{font-weight:600}
+tfoot td{border-top:2px solid var(--ink); border-bottom:0; font-weight:700}
+.ratio{display:inline-flex; align-items:center; gap:.6rem}
+.rtrack{position:relative; width:120px; height:6px; background:var(--line); border-radius:2px}
+.rfill{position:absolute; inset:0 auto 0 0; border-radius:2px}
+.rmark{position:absolute; top:-5px; bottom:-5px; width:2px; background:var(--ink)}
+.two{display:grid; grid-template-columns:1.1fr 1fr; gap:clamp(1.5rem,4vw,3.5rem); margin-top:3rem; align-items:start}
+.two h3{font-size:1.5rem; margin-bottom:.6rem}
+.legend{display:flex; flex-wrap:wrap; gap:.5rem 1.25rem; margin:0 0 .75rem; font-size:.85rem; color:var(--ink-2)}
+.legend i{display:inline-block; width:18px; height:3px; border-radius:2px; margin-right:.45rem; vertical-align:middle}
+#lineChart svg{display:block; width:100%; height:auto; overflow:visible}
+#lineChart .grid{stroke:var(--line)}
+#lineChart .axis{fill:var(--ink-2); font:500 11px var(--sans)}
+#lineChart .pt{font:700 11.5px var(--sans)}
+dl.facts{margin:0; display:grid; gap:0}
+dl.facts div{display:flex; justify-content:space-between; gap:1rem; padding:.75rem 0; border-bottom:1px solid var(--line)}
+dl.facts dt{color:var(--ink-2)}
+dl.facts dd{margin:0; font-weight:700; text-align:right}
+dl.facts small{display:block; font-weight:500; color:var(--ink-2)}
+
+.heat td.c{text-align:right; background:rgba(var(--heat),calc(.06 + var(--heat-max) * var(--f)))}
+.heat td.c.flat{background:rgba(var(--heat),.12)}
+.heat td.c.alert{box-shadow:inset 0 0 0 2px var(--neg)}
+.flag{display:inline-grid; place-items:center; width:15px; height:15px; margin-left:.35rem; border-radius:50%; background:var(--neg); color:var(--surface); font:800 10px/1 var(--sans); vertical-align:1px}
+.share{display:inline-flex; align-items:center; gap:.5rem}
+.strack{width:84px; height:6px; background:var(--line); border-radius:2px; position:relative}
+.sfill{position:absolute; inset:0 auto 0 0; background:var(--ink); border-radius:2px}
+.note{color:var(--ink-2); font-size:.84rem; margin:1rem 0 0; max-width:80ch}
+
+.rules{display:grid; gap:1.25rem; margin-top:2rem}
+.rule{display:grid; grid-template-columns:minmax(200px,1fr) 2.2fr; gap:1rem clamp(1.5rem,4vw,3rem); padding:1.4rem 0 1.4rem 1.4rem; border-left:3px solid var(--neg); background:linear-gradient(90deg,var(--neg-soft),transparent 55%)}
+.rule.brass{border-left-color:var(--brass); background:linear-gradient(90deg,rgba(var(--heat),.12),transparent 55%)}
+.rule h3{font-family:var(--sans); font-weight:700; font-size:1rem; line-height:1.35; letter-spacing:0}
+.rule .count{font-family:var(--serif); font-size:2.6rem; line-height:1; display:block; margin-bottom:.4rem}
+.rule p{margin:.4rem 0 0; color:var(--ink-2); font-size:.86rem}
+ul.dash{list-style:none; margin:0; padding:0; display:grid; gap:.55rem}
+ul.dash li{position:relative; padding-left:1.2rem}
+ul.dash li::before{content:"–"; position:absolute; left:0; color:var(--ink-2); font-weight:700}
+ul.dash.good li::before{color:var(--pos)}
+ul.dash small{display:block; color:var(--ink-2); font-size:.84rem}
+.trends td{vertical-align:top; white-space:normal}
+.trends td{text-align:left}
+.trends td:nth-child(2){width:120px}
+.trends td:last-child{text-align:left}
+.spark{display:block}
+.pill{display:block; width:fit-content; font-size:.78rem; font-weight:700; padding:.12rem .55rem; border-radius:999px; margin-bottom:.3rem}
+.pill.up{background:var(--neg-soft); color:var(--neg)}
+.pill.down{background:var(--pos-soft); color:var(--pos)}
+.pill.none{background:var(--surface-2); color:var(--ink-2)}
+.blocks{display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.5rem,4vw,3.5rem); margin-top:3rem}
+.blocks h3{font-size:1.5rem; margin-bottom:.9rem}
+.reading{display:grid; gap:0; margin-top:2rem}
+.reading li{list-style:none; display:grid; grid-template-columns:5.5rem 1fr; gap:1rem; padding:1rem 0; border-bottom:1px solid var(--line)}
+ul.reading{padding:0}
+.tag{align-self:start; justify-self:start; font-size:.78rem; font-weight:700; padding:.18rem .6rem; border-radius:4px; border:1px solid var(--line)}
+.tag.fato{color:var(--pos); border-color:var(--pos)}
+.tag.calc{color:var(--brass); border-color:var(--brass)}
+.tag.hip{color:var(--ink-2); border-style:dashed; border-color:var(--ink-2)}
+.reading p{margin:0}
+.reading small{display:block; color:var(--ink-2); margin-top:.2rem}
+
+.takeaway{margin:1.25rem 0 0; padding:.9rem 1.1rem; border-left:3px solid var(--brass); background:rgba(var(--heat),.10); max-width:78ch; font-size:.95rem}
+.takeaway b{display:block; font-size:.8rem; color:var(--brass); margin-bottom:.15rem}
+.hero .takeaway{background:rgba(224,185,101,.08)}
+.colors{display:flex; flex-wrap:wrap; gap:.5rem 1.5rem; margin:0 0 2rem; font-size:.88rem; color:var(--ink-2)}
+.colors i{display:inline-block; width:12px; height:12px; border-radius:3px; margin-right:.45rem; vertical-align:-1px}
+.concepts{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden}
+.concept{background:var(--surface); padding:1.5rem clamp(1.1rem,3vw,1.75rem)}
+.concept h3{font-size:1.75rem; line-height:1.1}
+.concept > p{margin:.35rem 0 1rem; color:var(--ink-2)}
+.eq{display:flex; flex-wrap:wrap; align-items:baseline; gap:.35rem .6rem; font-weight:700; font-size:.95rem}
+.eq.ex{margin-top:.45rem; font-weight:600; color:var(--ink-2)}
+.eq .op{color:var(--brass); font-family:var(--serif); font-size:1.35rem; font-weight:400}
+.eq .res{color:var(--ink); background:var(--surface-2); padding:.05rem .45rem; border-radius:4px}
+.eq .res.neg{color:var(--neg)} .eq .res.pos{color:var(--pos)}
+.hint{margin:1rem 0 0; font-size:.88rem; color:var(--ink-2); border-top:1px dashed var(--line); padding-top:.75rem}
+.before{display:grid; grid-template-columns:auto 1fr; gap:1rem; align-items:start; padding:1.1rem 1.25rem; border:1px dashed var(--ink-2); border-radius:8px; margin:0 0 2rem; max-width:80ch}
+.before b{font-family:var(--serif); font-weight:400; font-size:1.6rem; line-height:1}
+.before p{margin:0}
+.ladder{margin:0 0 2.5rem}
+.ladder h3{font-size:1.5rem; margin-bottom:.4rem}
+.ladder .sub{color:var(--ink-2); font-size:.9rem; margin:0 0 1.25rem; max-width:78ch}
+.steps{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; border-top:2px solid var(--ink)}
+.step{padding:1rem 1.25rem 0 0; border-right:1px solid var(--line); margin-right:1.25rem}
+.step:last-child{border-right:0; margin-right:0}
+.step small{display:block; color:var(--ink-2); font-weight:600; font-size:.82rem}
+.step strong{display:block; font-family:var(--serif); font-weight:400; font-size:clamp(1.5rem,2.6vw,2rem); line-height:1.15; margin:.2rem 0}
+.step span{font-size:.88rem; color:var(--ink-2)}
+.cover{margin:2rem 0 0}
+.cover h4{margin:0 0 .6rem; font-size:.95rem}
+.cbar{display:flex; height:30px; border-radius:6px; overflow:hidden; background:var(--surface-2); border:1px solid var(--line)}
+.cbar i{display:flex; align-items:center; padding:0 .6rem; font-style:normal; font-size:.78rem; font-weight:700; white-space:nowrap; overflow:hidden}
+.cbar .c1{background:var(--brass); color:var(--surface)}
+.cbar .c2{background:var(--pos); color:var(--surface)}
+.cbar .c3{background:repeating-linear-gradient(135deg,var(--neg-soft) 0 8px,transparent 8px 16px); color:var(--neg)}
+.ckey{display:flex; flex-wrap:wrap; gap:.4rem 1.4rem; margin:.6rem 0 0; font-size:.84rem; color:var(--ink-2)}
+.ckey i{display:inline-block; width:12px; height:12px; border-radius:3px; margin-right:.4rem; vertical-align:-1px}
+ol.recs{list-style:none; margin:0; padding:0; counter-reset:r; display:grid; gap:0}
+ol.recs > li{counter-increment:r; display:grid; grid-template-columns:3rem 1fr; gap:1rem; padding:1.5rem 0; border-top:1px solid var(--line)}
+ol.recs > li::before{content:counter(r); font-family:var(--serif); font-size:2.4rem; line-height:1; color:var(--brass)}
+.rec h3{font-family:var(--sans); font-weight:700; font-size:1.08rem; letter-spacing:0; line-height:1.35}
+.rec .origin{display:inline-block; margin:.35rem 0 .75rem; font-size:.76rem; font-weight:700; padding:.12rem .55rem; border-radius:4px; border:1px solid var(--line); color:var(--ink-2)}
+.rec .origin.adj{color:var(--brass); border-color:var(--brass)}
+.rec dl{display:grid; grid-template-columns:7.5rem 1fr; gap:.45rem 1rem; margin:0}
+.rec dt{color:var(--ink-2); font-size:.86rem; font-weight:600}
+.rec dd{margin:0; font-size:.95rem}
+@media (max-width:860px){
+  .concepts,.steps{grid-template-columns:1fr}
+  .step{border-right:0; margin-right:0; border-bottom:1px solid var(--line); padding-bottom:1rem}
+  .rec dl{grid-template-columns:1fr; gap:.1rem}
+  .rec dd{margin-bottom:.5rem}
+  ol.recs > li{grid-template-columns:2.2rem 1fr}
+}
+footer{border-top:1px solid var(--line); padding-block:2.5rem 3.5rem; color:var(--ink-2); font-size:.86rem}
+footer h2{font-size:1.5rem; color:var(--ink); margin-bottom:.75rem}
+footer p{max-width:78ch; margin:.4rem 0}
+
+@media (max-width:860px){
+  .detail,.two,.blocks,.rule{grid-template-columns:1fr}
+  .crow{grid-template-columns:5.2rem 1fr 7.6rem; gap:.6rem}
+  .bar .wrap{gap:.75rem}
+  .brand{font-size:1.15rem}
+}
+@media (max-width:560px){
+  .btn.print{display:none}
+  .reading li{grid-template-columns:1fr; gap:.5rem}
+}
+@media print{
+  :root{padding:0}
+  :root,:root[data-theme="dark"]{
+    --bg:#fff; --surface:#fff; --surface-2:#f4f6f8; --ink:#0D1B2A; --ink-2:#4A5A6E; --line:#cfd6de;
+    --brass:#8F6616; --pos:#0B7A66; --neg:#B02E27; --heat:143,102,22; --heat-max:.5;
+  }
+  body::before,.bar{display:none}
+  .hero,.heat td.c,.rule,.pill,.rfill,.sfill,.cfill,#heroChart rect{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+  .sec,.rule,.reading li{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#resumo">Relatório financeiro</a>
+    <nav aria-label="Seções">
+      <a href="#resumo">Resumo</a>
+      <a href="#como-ler">Como ler</a>
+      <a href="#perfil">Perfil mensal</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#analise">Análise</a>
+      <a href="#leitura">Leitura dos números</a>
+      <a href="#recomendacoes">Recomendações</a>
+      <a href="#metodo">Método</a>
+    </nav>
+    <div class="actions">
+      <button class="btn" id="themeBtn" type="button" aria-label="Alternar tema claro e escuro">Tema</button>
+      <button class="btn print" id="printBtn" type="button">Imprimir ou salvar PDF</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="resumo" aria-labelledby="h1">
+    <div class="wrap">
+      <p class="meta" id="meta"></p>
+      <h1 id="h1">Carregando relatório…</h1>
+      <p class="lead" id="lead"></p>
+      <dl class="kpis" id="kpis"></dl>
+
+      <div class="chart-head">
+        <h2>Saldo de cada mês</h2>
+        <p>Receita menos despesas. Selecione um mês para ver o detalhe.</p>
+      </div>
+      <div id="heroChart" class="rise"></div>
+      <p class="takeaway"><b>Como ler o gráfico</b>Barra para baixo, em vermelho, é um mês em que se gastou mais do que entrou; quanto mais longa, maior o buraco. Barra para cima, em verde, é um mês que sobrou dinheiro. O número menor embaixo de cada valor é a taxa de poupança do mês.</p>
+      <div class="detail" id="detail" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="como-ler" aria-labelledby="h-como">
+    <div class="wrap">
+      <h2 id="h-como">Como ler este relatório</h2>
+      <p class="intro">Quatro ideias explicam tudo o que vem depois. Os exemplos usam números reais da planilha, a maioria de abril, o mês mais difícil do semestre.</p>
+      <p class="colors"><span><i style="background:var(--neg)"></i>Vermelho: desfavorável (falta dinheiro, gasto acima do normal)</span><span><i style="background:var(--pos)"></i>Verde: favorável</span><span><i style="background:var(--brass)"></i>Dourado: destaque ou referência</span></p>
+      <div class="concepts">
+        <article class="concept">
+          <h3>Saldo</h3>
+          <p>O que sobra, ou falta, no fim do mês.</p>
+          <div class="eq"><span>Receita</span><span class="op">−</span><span>Despesas</span><span class="op">=</span><span class="res">Saldo</span></div>
+          <div class="eq ex"><span>R$ 5.800,00</span><span class="op">−</span><span>R$ 6.818,22</span><span class="op">=</span><span class="res neg">−R$ 1.018,22</span></div>
+          <p class="hint">Saldo negativo significa que o mês custou mais do que rendeu. A planilha não mostra de onde veio a diferença: pode ter sido reserva, cartão ou empréstimo.</p>
+        </article>
+        <article class="concept">
+          <h3>Taxa de poupança</h3>
+          <p>Quanto da receita sobrou, em porcentagem.</p>
+          <div class="eq"><span>Saldo</span><span class="op">÷</span><span>Receita</span><span class="op">=</span><span class="res">Poupança</span></div>
+          <div class="eq ex"><span>−R$ 1.018,22</span><span class="op">÷</span><span>R$ 5.800,00</span><span class="op">=</span><span class="res neg">−17,6%</span></div>
+          <p class="hint">A meta do projeto é 20%: guardar R$ 1 de cada R$ 5 que entram. Com receita de R$ 5.800, isso dá R$ 1.160 por mês.</p>
+        </article>
+        <article class="concept">
+          <h3>Alerta de categoria</h3>
+          <p>Um gasto que saltou em relação ao próprio histórico recente.</p>
+          <div class="eq"><span>Gasto do mês</span><span class="op">≥</span><span>média dos 3 meses anteriores × 1,2</span></div>
+          <div class="eq ex"><span>Outros em abril: R$ 788,32</span><span class="op">≥</span><span class="res">R$ 323,14 × 1,2 = R$ 387,77</span></div>
+          <p class="hint">A regra compara a categoria com ela mesma. Por isso, uma categoria pequena pode gerar alerta com um aumento modesto em reais.</p>
+        </article>
+        <article class="concept">
+          <h3>Tendência</h3>
+          <p>Três variações seguidas na mesma direção.</p>
+          <div class="eq"><span>mês 1</span><span class="op">›</span><span>mês 2</span><span class="op">›</span><span>mês 3</span><span class="op">›</span><span>mês 4</span></div>
+          <div class="eq ex"><span>Transporte: 820</span><span class="op">›</span><span>737</span><span class="op">›</span><span>706</span><span class="op">›</span><span class="res pos">648</span></div>
+          <p class="hint">Uma alta ou queda isolada pode ser acaso. Três seguidas já indicam um padrão que vale acompanhar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="perfil" aria-labelledby="h-perfil">
+    <div class="wrap">
+      <h2 id="h-perfil">Perfil mensal</h2>
+      <p class="intro" id="perfilIntro"></p>
+      <div class="scroll-x">
+        <table id="ledger">
+          <caption class="sr" style="position:absolute;left:-9999px">Receita, despesas, saldo e taxa de poupança por mês</caption>
+        </table>
+      </div>
+      <p class="takeaway"><b>Em uma frase</b>A última coluna mostra quanto da receita foi gasto. A marca vertical é 100%: barra passando dela quer dizer que o mês gastou mais do que ganhou, e isso aconteceu em cinco dos seis meses.</p>
+      <div class="two">
+        <div>
+          <h3>Receita contra despesas</h3>
+          <div class="legend">
+            <span><i style="background:var(--pos)"></i>Receita</span>
+            <span><i style="background:var(--neg)"></i>Despesas</span>
+            <span>Eixo vertical começa em R$ 5.500</span>
+          </div>
+          <div id="lineChart"></div>
+        </div>
+        <div>
+          <h3>Destaques do período</h3>
+          <dl class="facts" id="facts"></dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="categorias" aria-labelledby="h-cat">
+    <div class="wrap">
+      <h2 id="h-cat">Gastos por categoria</h2>
+      <p class="intro" id="catIntro"></p>
+      <div class="scroll-x"><table class="heat" id="heat"></table></div>
+      <p class="takeaway"><b>O que isso significa</b>Moradia e alimentação quase não mudam de um mês para outro e somam mais da metade dos gastos: são elas que definem o patamar. Os picos (os contornos vermelhos) vêm de categorias menores, onde compras pontuais pesam mais.</p>
+      <p class="note">Cor mais intensa indica o maior mês da própria categoria (cada linha usa a sua escala). Contorno vermelho com “!” marca alerta: gasto 20% ou mais acima da média dos 3 meses anteriores, avaliado a partir de abril.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="analise" aria-labelledby="h-an">
+    <div class="wrap">
+      <h2 id="h-an">Análise</h2>
+      <p class="intro" id="anIntro"></p>
+      <div class="rules" id="rules"></div>
+      <div class="blocks">
+        <div>
+          <h3>Tendências</h3>
+          <div class="scroll-x"><table class="trends" id="trends"></table></div>
+          <p class="note" id="trendNote"></p>
+        </div>
+        <div>
+          <h3>Destaques positivos</h3>
+          <ul class="dash good" id="positives"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="leitura" aria-labelledby="h-le">
+    <div class="wrap">
+      <h2 id="h-le">Leitura dos números</h2>
+      <p class="intro">Cada linha diz de que tipo é a afirmação: <strong>fato</strong> vem direto da planilha, <strong>cálculo</strong> é aritmética sobre os fatos com a premissa indicada, <strong>hipótese</strong> precisa ser confirmada por você.</p>
+      <ul class="reading" id="reading"></ul>
+    </div>
+  </section>
+
+  <section class="sec" id="recomendacoes" aria-labelledby="h-rec">
+    <div class="wrap">
+      <h2 id="h-rec">Recomendações</h2>
+      <p class="intro">As recomendações do relatório de 08/11/2026, conferidas com os dados e colocadas em ordem de execução. Para cada uma: o que fazer, por que, quanto vale e como saber se funcionou.</p>
+
+      <div class="before"><b>0</b><p><strong>Antes de tudo, atualize a planilha.</strong> Os dados vão de janeiro a junho de 2024. Qualquer decisão tomada hoje com base neles parte de uma foto antiga; com os 3 meses mais recentes, os números abaixo podem ser recalculados.</p></div>
+
+      <div class="ladder">
+        <h3>Onde se está e aonde se quer chegar</h3>
+        <p class="sub">Valores calculados sobre a receita média de R$ 6.033,33, que inclui o freela de março e o bônus de junho. Se esses extras não se repetirem, zerar o déficit exige R$ 720,14 por mês e a meta de 20% exige R$ 1.880,14.</p>
+        <div class="steps">
+          <div class="step"><small>Hoje</small><strong>R$ 6.520,14</strong><span>de despesa média por mês, com poupança de −8,1%</span></div>
+          <div class="step"><small>Passo 1: saldo zero</small><strong>−R$ 486,81/mês</strong><span>despesa de até R$ 6.033,33 (7,5% a menos)</span></div>
+          <div class="step"><small>Meta: poupar 20%</small><strong>−R$ 1.693,47/mês</strong><span>despesa de até R$ 4.826,67 (26% a menos)</span></div>
+        </div>
+        <div class="cover">
+          <h4>Quanto do passo 1 as recomendações 2 e 3 cobririam</h4>
+          <div class="cbar" role="img" aria-label="Do corte de R$ 486,81 por mês: tetos em Outros e Lazer cobrem R$ 191,98, menos 10% em alimentação cobre R$ 125,58 e faltam R$ 169,25">
+            <i class="c1" style="width:39.4%">R$ 191,98</i><i class="c2" style="width:25.8%">R$ 125,58</i><i class="c3" style="width:34.8%">faltam R$ 169,25</i>
+          </div>
+          <p class="ckey"><span><i style="background:var(--brass)"></i>Tetos em Outros e Lazer</span><span><i style="background:var(--pos)"></i>Exemplo: 10% a menos em alimentação</span><span><i style="background:var(--neg-soft);outline:1px solid var(--neg)"></i>Ainda sem solução</span></p>
+        </div>
+      </div>
+
+      <ol class="recs">
+        <li class="rec"><div>
+          <h3>Zerar o déficit antes de mirar os 20%</h3>
+          <span class="origin adj">Ajuste deste relatório</span>
+          <dl>
+            <dt>Por quê</dt><dd>Sair de −8,1% para +20% de uma vez exige cortar 26% da despesa. Chegar ao saldo zero exige 7,5%, um passo que dá para medir em poucos meses.</dd>
+            <dt>Quanto</dt><dd>R$ 486,81 por mês sobre a receita média (ou R$ 720,14 sem os extras).</dd>
+            <dt>Como medir</dt><dd>Saldo maior ou igual a zero por 3 meses seguidos.</dd>
+          </dl></div></li>
+        <li class="rec"><div>
+          <h3>Teto mensal para Outros e Lazer</h3>
+          <span class="origin">Relatório de 08/11, recomendação 2. Conferida</span>
+          <dl>
+            <dt>Por quê</dt><dd>São as categorias dos alertas de abril (eletrônico) e maio (viagem e restaurante).</dd>
+            <dt>Quanto</dt><dd>Com teto na mediana do semestre (Outros R$ 400,09; Lazer R$ 496,97), o semestre teria gasto R$ 1.151,86 a menos, cerca de R$ 191,98 por mês. Cobre 39% do passo 1.</dd>
+            <dt>Como medir</dt><dd>Nenhum mês acima do teto nas duas categorias.</dd>
+          </dl></div></li>
+        <li class="rec"><div>
+          <h3>Revisar alimentação e moradia</h3>
+          <span class="origin">Relatório de 08/11, recomendação 3. Conferida</span>
+          <dl>
+            <dt>Por quê</dt><dd>As duas somam 56,9% das despesas. Moradia inclui aluguel fixo de R$ 1.800, então mexer nela é uma decisão grande; alimentação responde mais rápido.</dd>
+            <dt>Quanto</dt><dd>Cada 10% a menos em alimentação vale R$ 125,58 por mês.</dd>
+            <dt>Como medir</dt><dd>Alimentação abaixo de R$ 1.130,25 por mês (10% abaixo da média atual).</dd>
+          </dl></div></li>
+        <li class="rec"><div>
+          <h3>Mandar receitas extras direto para uma reserva</h3>
+          <span class="origin">Relatório de 08/11, recomendação 5. Conferida</span>
+          <dl>
+            <dt>Por quê</dt><dd>Junho só fechou positivo por causa do bônus. Extra gasto no próprio mês esconde o déficit em vez de resolver.</dd>
+            <dt>Quanto</dt><dd>No semestre houve R$ 1.400 de extras (R$ 400 de freela e R$ 1.000 de bônus).</dd>
+            <dt>Como medir</dt><dd>Todo extra transferido para a reserva no mesmo mês em que entra.</dd>
+          </dl></div></li>
+        <li class="rec"><div>
+          <h3>Manter o que já funcionou</h3>
+          <span class="origin">Relatório de 08/11, recomendação 4. Conferida</span>
+          <dl>
+            <dt>Por quê</dt><dd>Transporte caiu R$ 172,07 entre fevereiro e maio, e assinaturas ficaram fixas em R$ 141.</dd>
+            <dt>Quanto</dt><dd>Evita que a economia conquistada volte a subir.</dd>
+            <dt>Como medir</dt><dd>Transporte abaixo da média de R$ 710,52 e assinaturas sem aumento.</dd>
+          </dl></div></li>
+      </ol>
+      <p class="takeaway"><b>Conclusão honesta</b>Mesmo somando tetos e um corte de 10% em alimentação, faltam R$ 169,25 por mês para zerar o déficit. Fechar essa diferença exige outra alavanca: evitar compras como os eletrônicos de março a maio (R$ 1.164,51 no total), mexer em moradia ou aumentar a receita recorrente.</p>
+    </div>
+  </section>
+</main>
+
+<footer id="metodo">
+  <div class="wrap">
+    <h2>Método e limites</h2>
+    <p id="source"></p>
+    <p>Regras de alerta aplicadas: gasto de categoria 20% ou mais acima da média dos 3 meses anteriores; qualquer mês com saldo negativo; taxa de poupança abaixo de 20% da receita em qualquer mês. Tendência: sequência de 3 variações seguidas na mesma direção dentro de uma categoria.</p>
+    <p>A taxa de poupança é saldo dividido pela receita do mês, arredondada a uma casa decimal, como na planilha. Os seis meses são de 2024 e a planilha não traz patrimônio, dívidas nem reservas, então o relatório descreve fluxo de caixa e não a situação financeira completa.</p>
+    <p>Este relatório descreve os dados e não é recomendação financeira ou de investimento.</p>
+  </div>
+</footer>
+
+<noscript><div class="wrap"><p>Este relatório precisa de JavaScript para desenhar os gráficos e tabelas.</p></div></noscript>
+
+<script>
+(function(){
+'use strict';
+
+/* ------------------------------------------------------------------
+   Dados: copiados das abas “Resumo Mensal” e “Gastos por Categoria”
+   de financas_pessoais_2024.xlsx. Tudo abaixo é calculado a partir deles.
+------------------------------------------------------------------- */
+var DATA={
+  periodo:'Jan a Jun 2024',
+  fonte:'financas_pessoais_2024.xlsx',
+  geradoEm:'9 de novembro de 2026',
+  meses:['Janeiro','Fevereiro','Março','Abril','Maio','Junho'],
+  abrev:['Jan','Fev','Mar','Abr','Mai','Jun'],
+  receita:[5800,5800,6200,5800,5800,6800],
+  despesa:[6149.99,6353.90,6739.99,6818.22,6668.81,6389.92],
+  categorias:[
+    ['Moradia',[2425.19,2440.21,2487.09,2414.78,2459.29,2495.90]],
+    ['Alimentação',[1141.44,1314.99,1236.40,1353.51,1273.18,1215.46]],
+    ['Transporte',[688.92,820.19,736.79,706.06,648.12,663.03]],
+    ['Saúde',[485.36,641.15,734.25,720.35,528.86,751.81]],
+    ['Lazer',[789.72,337.58,537.18,408.20,774.85,456.76]],
+    ['Educação',[414.46,286.00,334.53,286.00,423.29,286.00]],
+    ['Assinaturas',[141,141,141,141,141,141]],
+    ['Outros',[63.90,372.78,532.75,788.32,420.22,379.96]]
+  ],
+  /* Origem das altas, conferida nos lançamentos da própria planilha */
+  origem:{
+    'Outros|3':'Eletrônico de R$ 555,82 dentro dos R$ 788,32 do mês (o restante é roupa e doação).',
+    'Lazer|4':'Viagem de R$ 335,38 e restaurante de R$ 270,66 somam R$ 606,04 dos R$ 774,85.',
+    'Educação|4':'Livros e material didático somam R$ 137,29, além das mensalidades fixas de R$ 286,00.'
+  },
+  notaTendencia:{
+    'Outros':'Há compra de eletrônico em março (R$ 270,89), abril (R$ 555,82) e maio (R$ 337,80).'
+  }
+};
+
+/* ---------- utilidades ---------- */
+function $(s,r){return (r||document).querySelector(s);}
+function r2(x){return Math.round(x*100)/100;}
+function rHA(x,d){var f=Math.pow(10,d);return (x<0?-1:1)*Math.round(Math.abs(x)*f+1e-9)/f;}
+var nf=new Intl.NumberFormat('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+var nf0=new Intl.NumberFormat('pt-BR',{maximumFractionDigits:0});
+function sg(n){return n<0?'−':'';}
+function brl(n){return sg(n)+'R$ '+nf.format(Math.abs(n));}
+function brlS(n){return (n>0?'+':sg(n))+'R$ '+nf.format(Math.abs(n));}
+function short(n){return sg(n)+nf0.format(Math.abs(n));}
+function pct(n,d){return sg(n)+Math.abs(n).toFixed(d==null?1:d).replace('.',',')+'%';}
+function pctS(n,d){return (n>0?'+':sg(n))+Math.abs(n).toFixed(d==null?1:d).replace('.',',')+'%';}
+function sum(a){return r2(a.reduce(function(x,y){return x+y;},0));}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+
+/* ---------- modelo ---------- */
+var N=DATA.meses.length;
+var saldo=DATA.receita.map(function(r,i){return r2(r-DATA.despesa[i]);});
+var poup=DATA.receita.map(function(r,i){return rHA((r-DATA.despesa[i])/r*100,1);});
+var razao=DATA.receita.map(function(r,i){return DATA.despesa[i]/r*100;});
+var T={rec:sum(DATA.receita),des:sum(DATA.despesa)};
+T.saldo=r2(T.rec-T.des); T.poup=rHA(T.saldo/T.rec*100,1); T.desMedia=r2(T.des/N); T.recMedia=r2(T.rec/N);
+var cats=DATA.categorias.map(function(c){
+  var v=c[1],total=sum(v),media=total/N,mx=Math.max.apply(null,v),mn=Math.min.apply(null,v);
+  return {nome:c[0],v:v,total:total,media:media,max:mx,min:mn,iMax:v.indexOf(mx),iMin:v.indexOf(mn),
+          flat:mx===mn,share:total/T.des*100};
+}).sort(function(a,b){return b.total-a.total;});
+var worst=saldo.indexOf(Math.min.apply(null,saldo));
+var neg=saldo.map(function(s,i){return s<0?i:-1;}).filter(function(i){return i>=0;});
+var low=poup.map(function(p,i){return (DATA.receita[i]&&((DATA.receita[i]-DATA.despesa[i])/DATA.receita[i]*100)<20)?i:-1;}).filter(function(i){return i>=0;});
+var alertCat=[];
+cats.forEach(function(c){
+  for(var i=3;i<N;i++){
+    var avg=(c.v[i-1]+c.v[i-2]+c.v[i-3])/3;
+    if(c.v[i]>=avg*1.2){alertCat.push({nome:c.nome,i:i,valor:c.v[i],media3:avg,pct:(c.v[i]/avg-1)*100});}
+  }
+});
+alertCat.sort(function(a,b){return a.i-b.i||b.pct-a.pct;});
+var alertTotal=alertCat.length+neg.length+low.length;
+
+function runs(v){
+  var out=[],dir=0,start=0;
+  for(var i=1;i<=v.length;i++){
+    var d=i<v.length?(v[i]>v[i-1]?1:v[i]<v[i-1]?-1:0):0;
+    if(d!==dir){
+      if(dir!==0&&(i-1-start)>=3){out.push({dir:dir,from:start,to:i-1});}
+      start=i-1;dir=d;
+    }
+  }
+  return out;
+}
+cats.forEach(function(c){c.runs=runs(c.v);});
+function recent(c){var a=c.v[N-3],b=c.v[N-2],d=c.v[N-1];return (a<b&&b<d)?1:(a>b&&b>d)?-1:0;}
+var below=cats.filter(function(c){return !c.flat&&c.v[N-1]<c.media;});
+
+/* ---------- cabeçalho do hero ---------- */
+function renderHero(){
+  $('#meta').textContent='Perfil, análise e recomendações, '+DATA.periodo+'. Gerado em '+DATA.geradoEm+'.';
+  var nNeg=neg.length;
+  var palavras=['nenhum','um','dois','três','quatro','cinco','seis'];
+  $('#h1').textContent=(nNeg===N?'Em todos os meses':'Em '+palavras[nNeg]+' dos '+palavras[N]+' meses')+', as despesas passaram da receita.';
+  $('#lead').innerHTML='O semestre fechou em <strong>'+brl(T.saldo)+'</strong>, uma taxa de poupança de <strong>'+pct(T.poup)+'</strong> sobre '+brl(T.rec)+' de receita. Só <strong>'+DATA.meses[saldo.indexOf(Math.max.apply(null,saldo))].toLowerCase()+'</strong> terminou no positivo.';
+  var k=[
+    ['Receita total',brl(T.rec),''],
+    ['Despesas totais',brl(T.des),''],
+    ['Saldo do período',brl(T.saldo),T.saldo<0?'neg':'pos'],
+    ['Poupança',pct(T.poup),T.poup<0?'neg':'pos'],
+    ['Despesa média por mês',brl(T.desMedia),'']
+  ];
+  $('#kpis').innerHTML=k.map(function(x){return '<div class="kpi"><dt>'+x[0]+'</dt><dd class="'+x[2]+'">'+x[1]+'</dd></div>';}).join('');
+}
+
+/* ---------- gráfico de saldo (hero) ---------- */
+var selected=worst;
+function heroChart(animate){
+  var el=$('#heroChart');
+  var W=Math.max(300,Math.round(el.clientWidth||760)),H=372;
+  var L=W<560?6:68,R=6,Tp=26,ymin=-1250,ymax=700,Hp=300,sc=Hp/(ymax-ymin);
+  function y(v){return Tp+(ymax-v)*sc;}
+  var slot=(W-L-R)/N,bw=Math.min(64,slot*0.58),compact=slot<92;
+  var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Saldo mensal: '+DATA.meses.map(function(m,i){return m+' '+brl(saldo[i]);}).join('; ')+'">';
+  [500,0,-500,-1000].forEach(function(g){
+    if(g===0)return;
+    s+='<line class="grid" x1="'+L+'" x2="'+(W-R)+'" y1="'+y(g)+'" y2="'+y(g)+'"/>';
+    if(L>20)s+='<text class="axis" x="'+(L-10)+'" y="'+(y(g)+4)+'" text-anchor="end">'+short(g)+'</text>';
+  });
+  s+='<line class="zero" x1="'+L+'" x2="'+(W-R)+'" y1="'+y(0)+'" y2="'+y(0)+'"/>';
+  if(L>20)s+='<text class="axis" x="'+(L-10)+'" y="'+(y(0)+4)+'" text-anchor="end">0</text>';
+  for(var i=0;i<N;i++){
+    var cx=L+slot*i+slot/2,x=cx-bw/2,v=saldo[i],isPos=v>=0;
+    var top=isPos?y(v):y(0),h=Math.max(2,Math.abs(y(v)-y(0)));
+    var col=isPos?'var(--pos)':'var(--neg)';
+    s+='<g class="bar-g '+(isPos?'p':'n')+'" data-i="'+i+'" data-sel="'+(i===selected?1:0)+'" style="--i:'+i+'" role="button" tabindex="0" aria-pressed="'+(i===selected)+'" aria-label="'+DATA.meses[i]+': saldo '+brl(v)+', poupança '+pct(poup[i])+'">';
+    s+='<rect x="'+(L+slot*i)+'" y="'+Tp+'" width="'+slot+'" height="'+(H-Tp-24)+'" fill="transparent"/>';
+    s+='<rect class="b" x="'+x+'" y="'+top+'" width="'+bw+'" height="'+h+'" rx="2" fill="'+col+'"/>';
+    var vl=compact?short(v):brl(v),ty,py;
+    if(isPos){py=top-9;ty=top-24;}else{ty=top+h+18;py=top+h+34;}
+    s+='<text class="vlabel" x="'+cx+'" y="'+ty+'" text-anchor="middle" fill="'+col+'">'+vl+'</text>';
+    s+='<text class="plabel" x="'+cx+'" y="'+py+'" text-anchor="middle">'+pct(poup[i])+'</text>';
+    s+='<text class="mlabel" x="'+cx+'" y="'+(H-6)+'" text-anchor="middle">'+(compact?DATA.abrev[i]:DATA.meses[i])+'</text>';
+    s+='</g>';
+  }
+  s+='</svg>';
+  el.className=animate?'rise':'';
+  el.innerHTML=s;
+}
+function select(i){
+  selected=i;
+  var gs=document.querySelectorAll('#heroChart .bar-g');
+  for(var k=0;k<gs.length;k++){
+    var on=(+gs[k].getAttribute('data-i'))===i;
+    gs[k].setAttribute('data-sel',on?1:0);gs[k].setAttribute('aria-pressed',on);
+  }
+  renderDetail();
+}
+function renderDetail(){
+  var i=selected,gmax=0;
+  cats.forEach(function(c){gmax=Math.max(gmax,c.v[i],c.media);});
+  var rows=cats.slice().sort(function(a,b){return b.v[i]-a.v[i];}).map(function(c){
+    var d=c.v[i]-c.media,dp=c.media?d/c.media*100:0,eq=Math.abs(d)<0.005;
+    var txt=eq?'igual à média':(d>0?pctS(dp,0)+' acima da média':pctS(dp,0).replace('+','')+' abaixo da média');
+    if(!eq&&d<0){txt=pct(Math.abs(dp),0)+' abaixo da média';}
+    var cls=eq?'':(d>0?'neg':'pos');
+    return '<div class="crow"><span class="cname">'+c.nome+'</span>'+
+      '<span class="ctrack" aria-hidden="true"><i class="cfill" style="width:'+(c.v[i]/gmax*100).toFixed(1)+'%"></i><b class="ctick" style="left:calc('+(c.media/gmax*100).toFixed(1)+'% - 1px)"></b></span>'+
+      '<span class="cright"><b>'+brl(c.v[i])+'</b><small class="'+cls+'">'+txt+'</small></span></div>';
+  }).join('');
+  $('#detail').innerHTML=
+    '<div><h3>'+DATA.meses[i]+'</h3><dl>'+
+      '<div><dt>Receita</dt><dd>'+brl(DATA.receita[i])+'</dd></div>'+
+      '<div><dt>Despesas</dt><dd>'+brl(DATA.despesa[i])+'</dd></div>'+
+      '<div><dt>Saldo</dt><dd class="'+(saldo[i]<0?'neg':'pos')+'">'+brl(saldo[i])+'</dd></div>'+
+      '<div><dt>Poupança</dt><dd class="'+(poup[i]<0?'neg':'pos')+'">'+pct(poup[i])+'</dd></div>'+
+    '</dl></div>'+
+    '<div class="crows"><h4>Gasto por categoria em '+DATA.meses[i].toLowerCase()+'</h4>'+rows+'</div>'+
+    '<p class="legend-note">A barra é o gasto do mês e a marca vertical é a média da categoria nos seis meses.</p>';
+}
+
+/* ---------- perfil mensal ---------- */
+function renderLedger(){
+  var maxP=poup.indexOf(Math.max.apply(null,poup));
+  $('#perfilIntro').innerHTML='A receita ficou em <strong>'+brl(DATA.receita[0])+'</strong> na maioria dos meses; março e junho vieram acima disso. As despesas, por outro lado, ficaram entre <strong>'+brl(Math.min.apply(null,DATA.despesa))+'</strong> e <strong>'+brl(Math.max.apply(null,DATA.despesa))+'</strong>.';
+  var h='<thead><tr><th scope="col">Mês</th><th scope="col">Receita</th><th scope="col">Despesas</th><th scope="col">Saldo</th><th scope="col">Poupança</th><th scope="col">Despesa sobre receita</th></tr></thead><tbody>';
+  for(var i=0;i<N;i++){
+    var r=razao[i];
+    h+='<tr><td>'+DATA.meses[i]+'</td><td>'+brl(DATA.receita[i])+'</td><td>'+brl(DATA.despesa[i])+'</td>'+
+      '<td class="'+(saldo[i]<0?'neg':'pos')+'">'+brl(saldo[i])+'</td><td class="'+(poup[i]<0?'neg':'pos')+'">'+pct(poup[i])+'</td>'+
+      '<td><span class="ratio"><span class="rtrack" aria-hidden="true"><i class="rfill" style="width:'+Math.min(100,r/125*100).toFixed(1)+'%;background:'+(r>100?'var(--neg)':'var(--pos)')+'"></i><b class="rmark" style="left:80%"></b></span>'+r.toFixed(0)+'%</span></td></tr>';
+  }
+  h+='</tbody><tfoot><tr><td>Total</td><td>'+brl(T.rec)+'</td><td>'+brl(T.des)+'</td><td class="'+(T.saldo<0?'neg':'pos')+'">'+brl(T.saldo)+'</td><td class="'+(T.poup<0?'neg':'pos')+'">'+pct(T.poup)+'</td><td>'+(T.des/T.rec*100).toFixed(0)+'%</td></tr></tfoot>';
+  $('#ledger').insertAdjacentHTML('beforeend',h);
+
+  var iMaxR=DATA.receita.indexOf(Math.max.apply(null,DATA.receita)),minR=Math.min.apply(null,DATA.receita);
+  var minMeses=DATA.receita.map(function(v,i){return v===minR?DATA.abrev[i]:null;}).filter(Boolean);
+  var big=cats[0];
+  $('#facts').innerHTML=
+    '<div><dt>Maior receita</dt><dd>'+brl(DATA.receita[iMaxR])+'<small>'+DATA.meses[iMaxR]+'</small></dd></div>'+
+    '<div><dt>Menor receita</dt><dd>'+brl(minR)+'<small>'+minMeses.join(', ')+' (empate)</small></dd></div>'+
+    '<div><dt>Maior gasto no período</dt><dd>'+big.nome+': '+brl(big.total)+'<small>'+pct(big.share)+' das despesas</small></dd></div>'+
+    '<div><dt>Melhor taxa de poupança</dt><dd>'+pct(poup[maxP])+'<small>'+DATA.meses[maxP]+'</small></dd></div>'+
+    '<div><dt>Pior saldo</dt><dd class="neg">'+brl(saldo[worst])+'<small>'+DATA.meses[worst]+', despesa de '+razao[worst].toFixed(0)+'% da receita</small></dd></div>';
+}
+
+function lineChart(){
+  var el=$('#lineChart'),W=Math.max(300,Math.round(el.clientWidth||520)),H=300;
+  var L=W<520?46:58,R=14,Tp=24,Bm=34,ymin=5500,ymax=7000;
+  function y(v){return Tp+(ymax-v)/(ymax-ymin)*(H-Tp-Bm);}
+  var slot=(W-L-R)/N;
+  function x(i){return L+slot*i+slot/2;}
+  var s='<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Receita e despesas por mês, de janeiro a junho">';
+  [5500,6000,6500,7000].forEach(function(g){
+    s+='<line class="grid" x1="'+L+'" x2="'+(W-R)+'" y1="'+y(g)+'" y2="'+y(g)+'"/><text class="axis" x="'+(L-8)+'" y="'+(y(g)+4)+'" text-anchor="end">'+nf0.format(g)+'</text>';
+  });
+  var pr='',pd='';
+  for(var i=0;i<N;i++){pr+=(i?'L':'M')+x(i)+' '+y(DATA.receita[i]);pd+=(i?'L':'M')+x(i)+' '+y(DATA.despesa[i]);}
+  for(i=0;i<N;i++){
+    var gapCol=DATA.despesa[i]>DATA.receita[i]?'var(--neg)':'var(--pos)';
+    s+='<line x1="'+x(i)+'" x2="'+x(i)+'" y1="'+y(DATA.receita[i])+'" y2="'+y(DATA.despesa[i])+'" stroke="'+gapCol+'" stroke-width="6" stroke-linecap="round" opacity=".22"/>';
+  }
+  s+='<path d="'+pr+'" fill="none" stroke="var(--pos)" stroke-width="2.5" stroke-linejoin="round"/>';
+  s+='<path d="'+pd+'" fill="none" stroke="var(--neg)" stroke-width="2.5" stroke-linejoin="round"/>';
+  var labels=W>=460;
+  for(i=0;i<N;i++){
+    var rUp=DATA.receita[i]>=DATA.despesa[i];
+    s+='<circle cx="'+x(i)+'" cy="'+y(DATA.receita[i])+'" r="4.5" fill="var(--surface)" stroke="var(--pos)" stroke-width="2.5"/>';
+    s+='<circle cx="'+x(i)+'" cy="'+y(DATA.despesa[i])+'" r="4.5" fill="var(--surface)" stroke="var(--neg)" stroke-width="2.5"/>';
+    if(labels){
+      s+='<text class="pt" x="'+x(i)+'" y="'+(y(DATA.receita[i])+(rUp?-11:19))+'" text-anchor="middle" fill="var(--pos)">'+nf0.format(DATA.receita[i])+'</text>';
+      s+='<text class="pt" x="'+x(i)+'" y="'+(y(DATA.despesa[i])+(rUp?19:-11))+'" text-anchor="middle" fill="var(--neg)">'+nf0.format(DATA.despesa[i])+'</text>';
+    }
+    s+='<text class="axis" x="'+x(i)+'" y="'+(H-10)+'" text-anchor="middle">'+DATA.abrev[i]+'</text>';
+  }
+  s+='</svg>';
+  el.innerHTML=s;
+}
+
+/* ---------- categorias ---------- */
+function renderHeat(){
+  var top2=cats[0].share+cats[1].share;
+  $('#catIntro').innerHTML='<strong>'+cats[0].nome+'</strong> e <strong>'+cats[1].nome.toLowerCase()+'</strong> juntas respondem por <strong>'+pct(top2)+'</strong> das despesas do semestre. '+cats[0].nome+' quase não se mexe (variação de '+brl(cats[0].max-cats[0].min)+' entre o menor e o maior mês); a oscilação vem das categorias menores.';
+  var h='<thead><tr><th scope="col">Categoria</th>'+DATA.abrev.map(function(m){return '<th scope="col">'+m+'</th>';}).join('')+'<th scope="col">Média por mês</th><th scope="col">Total</th><th scope="col">Pico</th><th scope="col">Participação</th></tr></thead><tbody>';
+  cats.forEach(function(c){
+    h+='<tr><td>'+c.nome+'</td>';
+    c.v.forEach(function(v,i){
+      var al=alertCat.some(function(a){return a.nome===c.nome&&a.i===i;});
+      var f=c.flat?0:(v-c.min)/(c.max-c.min);
+      h+='<td class="c'+(c.flat?' flat':'')+(al?' alert':'')+'" style="--f:'+f.toFixed(3)+'">'+nf.format(v)+(al?'<span class="flag" role="img" aria-label="alerta">!</span>':'')+'</td>';
+    });
+    h+='<td>'+brl(c.media)+'</td><td>'+brl(c.total)+'</td><td>'+(c.flat?'estável':DATA.abrev[c.iMax])+'</td>'+
+       '<td><span class="share"><span class="strack" aria-hidden="true"><i class="sfill" style="width:'+c.share.toFixed(1)+'%"></i></span>'+pct(c.share)+'</span></td></tr>';
+  });
+  var colTot=DATA.despesa;
+  h+='</tbody><tfoot><tr><td>Total</td>'+colTot.map(function(v){return '<td>'+nf.format(v)+'</td>';}).join('')+'<td>'+brl(T.desMedia)+'</td><td>'+brl(T.des)+'</td><td></td><td>100,0%</td></tr></tfoot>';
+  $('#heat').innerHTML=h;
+}
+
+/* ---------- análise ---------- */
+function spark(v,dir){
+  var w=96,h=28,mn=Math.min.apply(null,v),mx=Math.max.apply(null,v),rg=(mx-mn)||1;
+  var pts=v.map(function(a,i){return (4+i*(w-8)/(v.length-1)).toFixed(1)+','+(h-4-(a-mn)/rg*(h-8)).toFixed(1);});
+  var last=pts[pts.length-1].split(',');
+  var col=dir>0?'var(--neg)':dir<0?'var(--pos)':'var(--ink-2)';
+  return '<svg class="spark" width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'" aria-hidden="true"><polyline points="'+pts.join(' ')+'" fill="none" stroke="'+col+'" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><circle cx="'+last[0]+'" cy="'+last[1]+'" r="3" fill="'+col+'"/></svg>';
+}
+function renderAnalysis(){
+  var bestM=saldo.indexOf(Math.max.apply(null,saldo));
+  var semBonus=r2(DATA.receita[0]-DATA.despesa[bestM]);
+  $('#anIntro').innerHTML='Em <strong>'+neg.length+' dos '+N+' meses</strong> o saldo ficou negativo e o acumulado foi de <strong>'+brl(T.saldo)+'</strong>. As regras do projeto geraram <strong>'+alertTotal+' ocorrências de alerta</strong>, a maior parte delas por saldo negativo e poupança baixa, que são dois jeitos de ver o mesmo desequilíbrio. Os picos de abril e maio vieram de eletrônico, viagem e restaurante, mas a despesa média de <strong>'+brl(T.desMedia)+'</strong> já está acima do salário de <strong>'+brl(DATA.receita[0])+'</strong> que se repete na maioria dos meses.';
+
+  var r1=alertCat.map(function(a){
+    var o=DATA.origem[a.nome+'|'+a.i];
+    return '<li><b>'+a.nome+', '+DATA.meses[a.i].toLowerCase()+':</b> '+brl(a.valor)+' contra média de '+brl(a.media3)+' nos 3 meses anteriores ('+pctS(a.pct)+').'+(o?'<small>'+o+'</small>':'')+'</li>';
+  }).join('');
+  var acc=0,accTxt='';
+  var r2h=neg.map(function(i){acc=r2(acc+saldo[i]);return '<li><b>'+DATA.meses[i]+':</b> '+brl(saldo[i])+' ('+pct(poup[i])+')</li>';}).join('');
+  accTxt='Acumulado de janeiro a maio: '+brl(acc)+'. Junho recuperou '+brl(saldo[bestM])+', e o semestre fechou em '+brl(T.saldo)+'.';
+  var r3=low.map(function(i){return '<li><b>'+DATA.meses[i]+':</b> '+pct(poup[i])+' de poupança</li>';}).join('');
+  var rule=function(cls,count,title,note,items){
+    return '<article class="rule'+cls+'"><div><span class="count">'+count+'</span><h3>'+title+'</h3>'+(note?'<p>'+note+'</p>':'')+'</div><ul class="dash">'+items+'</ul></article>';
+  };
+  $('#rules').innerHTML=
+    rule('',alertCat.length,'Categoria 20% ou mais acima da média dos 3 meses anteriores','Só é possível avaliar de abril em diante, porque a regra pede 3 meses de histórico.',r1)+
+    rule('',neg.length,'Mês com saldo negativo',accTxt,r2h)+
+    rule(' brass',low.length,'Poupança abaixo de 20% da receita','Aconteceu nos '+N+' meses; a melhor taxa foi '+pct(Math.max.apply(null,poup))+' em '+DATA.meses[poup.indexOf(Math.max.apply(null,poup))].toLowerCase()+'.',r3);
+
+  var tr='<thead><tr><th scope="col">Categoria</th><th scope="col">Evolução</th><th scope="col">Leitura</th></tr></thead><tbody>';
+  cats.forEach(function(c){
+    var run=c.runs[0],pill,txt;
+    if(run){
+      var a=c.v[run.from],b=c.v[run.to];
+      pill='<span class="pill '+(run.dir>0?'up':'down')+'">'+(run.dir>0?'Alta':'Queda')+' por 3 meses seguidos</span>';
+      txt=DATA.abrev[run.from]+' a '+DATA.abrev[run.to]+': de '+brl(a)+' para '+brl(b)+' ('+brlS(b-a)+').';
+      if(DATA.notaTendencia[c.nome])txt+=' '+DATA.notaTendencia[c.nome];
+    }else{
+      var rc=recent(c);
+      pill='<span class="pill none">Sem sequência de 3</span>';
+      txt=c.flat?'Valor fixo de '+brl(c.v[0])+' em todos os meses.':'Oscila entre '+brl(c.min)+' e '+brl(c.max)+'.';
+      if(rc)txt+=' Nos 2 últimos movimentos, '+(rc>0?'subiu':'caiu')+' ('+DATA.abrev[N-3]+' a '+DATA.abrev[N-1]+').';
+    }
+    tr+='<tr><td>'+c.nome+'</td><td>'+spark(c.v,run?run.dir:0)+'</td><td>'+pill+txt+'</td></tr>';
+  });
+  tr+='</tbody>';
+  $('#trends').innerHTML=tr;
+  var pp=poup.map(function(p){return pct(p);}).join(' → ');
+  $('#trendNote').innerHTML='<b>Taxa de poupança:</b> '+pp+'. Piorou até abril, melhorou em maio e fechou junho no positivo. Em junho, o salário do mês veio '+brl(DATA.receita[bestM]-DATA.receita[0])+' acima do padrão (lançamento “Salário + Bônus”); com '+brl(DATA.receita[0])+' de receita, o saldo seria '+brl(semBonus)+' ('+pct(semBonus/DATA.receita[0]*100)+').';
+
+  var pos=[];
+  pos.push('<li><b>Junho foi o único mês positivo:</b> saldo de '+brl(saldo[bestM])+', com despesa de '+brl(DATA.despesa[bestM])+', abaixo de abril e maio.</li>');
+  var f30=poup.filter(function(p){return p>30;}).length;
+  pos.push('<li><b>Poupança acima de 30%:</b> '+(f30?f30+' mês(es)':'nenhum mês')+'. A melhor taxa do semestre foi '+pct(Math.max.apply(null,poup))+'.</li>');
+  if(below.length){
+    pos.push('<li><b>Em junho, '+below.length+' de '+cats.length+' categorias ficaram abaixo da própria média:</b> '+below.map(function(c){return c.nome.toLowerCase()+' ('+pct(Math.abs((c.v[N-1]/c.media-1)*100),0)+' abaixo)';}).join(', ')+'.</li>');
+  }
+  cats.forEach(function(c){
+    var run=c.runs[0];
+    if(run&&run.dir<0){pos.push('<li><b>'+c.nome+' caiu por 3 meses seguidos</b> ('+DATA.abrev[run.from]+' a '+DATA.abrev[run.to]+'): de '+brl(c.v[run.from])+' para '+brl(c.v[run.to])+', uma redução de '+brl(c.v[run.from]-c.v[run.to])+'.</li>');}
+  });
+  var asn=cats.filter(function(c){return c.flat;})[0];
+  if(asn)pos.push('<li><b>'+asn.nome+' é previsível:</b> '+brl(asn.v[0])+' por mês, '+pct(asn.share)+' das despesas.</li>');
+  pos.push('<li><b>'+cats[0].nome+' é estável:</b> só '+brl(cats[0].max-cats[0].min)+' separam o menor do maior mês, o que facilita planejar a maior fatia do orçamento.</li>');
+  $('#positives').innerHTML=pos.join('');
+}
+
+/* ---------- leitura dos números ---------- */
+function renderReading(){
+  var base=DATA.receita[0],gap=r2(T.desMedia-base);
+  var target=r2(base*0.8),cut=r2(T.desMedia-target);
+  var flex=['Lazer','Outros','Assinaturas'].map(function(n){return cats.filter(function(c){return c.nome===n;})[0];});
+  var flexMedia=r2(flex.reduce(function(a,c){return a+c.media;},0));
+  var abr=3,semEle=r2(DATA.despesa[abr]-555.82);
+  var mor=cats[0],al=cats[1];
+  var it=[
+    ['fato','Cinco dos seis meses fecharam no negativo e o semestre acumulou '+brl(T.saldo)+'.','Fonte: aba Resumo Mensal.'],
+    ['fato',mor.nome+' é '+pct(mor.share)+' das despesas e, com '+al.nome.toLowerCase()+', chega a '+pct(mor.share+al.share)+'. Em relação à receita do período, '+mor.nome.toLowerCase()+' sozinha pesa '+pct(mor.total/T.rec*100)+'.','Fonte: aba Gastos por Categoria.'],
+    ['calc','Falta cerca de '+brl(gap)+' por mês: a despesa média é '+brl(T.desMedia)+' e o salário recorrente é '+brl(base)+'.','Premissa: o salário recorrente é '+brl(base)+'. Março (+'+brl(DATA.receita[2]-base)+', “Salário + Freela”) e junho (+'+brl(DATA.receita[5]-base)+', “Salário + Bônus”) trouxeram extras.'],
+    ['calc','Mesmo sem o eletrônico de abril ('+brl(555.82)+'), o mês fecharia em '+brl(semEle)+', acima dos '+brl(base)+'. Essa compra não explica sozinha o resultado.','Atenção: há lançamentos de eletrônico também em março ('+brl(270.89)+') e maio ('+brl(337.80)+'). Vale checar se são compras isoladas ou parcelas.'],
+    ['calc','Para poupar 20% de '+brl(base)+', a despesa teria de ficar em '+brl(target)+', ou '+brl(cut)+' abaixo da média atual. Zerar lazer, outros e assinaturas (média de '+brl(flexMedia)+' por mês) não bastaria.','Premissa: lazer, outros e assinaturas são as categorias mais flexíveis. Essa classificação é uma escolha sua, não da planilha.'],
+    ['hip','Os números de junho podem indicar o início de uma melhora (despesa de '+brl(DATA.despesa[5])+', abaixo de abril e maio), mas é um mês só.','Para confirmar, o relatório precisa de mais meses depois de junho.'],
+    ['hip','A planilha pode não cobrir toda a renda e todas as despesas (impostos, reservas, imprevistos, dívidas).','Confirme se ela representa o caixa completo antes de tomar decisões com base nela.']
+  ];
+  var lab={fato:'Fato',calc:'Cálculo',hip:'Hipótese'};
+  $('#reading').innerHTML=it.map(function(x){return '<li><span class="tag '+x[0]+'">'+lab[x[0]]+'</span><div><p>'+x[1]+'</p><small>'+x[2]+'</small></div></li>';}).join('');
+  $('#source').innerHTML='Fonte: planilha <b>'+esc(DATA.fonte)+'</b> (Google Drive, pasta Projeto Agente Financeiro), abas Lançamentos, Resumo Mensal e Gastos por Categoria, e o relatório anterior do projeto, relatorio_financeiro_novembro_2026-11-08.txt (fluxo leitor-financeiro e analisador-financeiro), cujos números foram todos conferidos. A soma das categorias confere com a despesa mensal em todos os 6 meses. Relatório gerado em '+DATA.geradoEm+'.';
+}
+
+/* ---------- inicialização e eventos ---------- */
+function drawCharts(animate){heroChart(animate);lineChart();}
+renderHero();renderDetail();renderLedger();renderHeat();renderAnalysis();renderReading();
+drawCharts(true);
+
+$('#heroChart').addEventListener('click',function(e){
+  var g=e.target.closest?e.target.closest('[data-i]'):null;if(g)select(+g.getAttribute('data-i'));
+});
+$('#heroChart').addEventListener('keydown',function(e){
+  var g=e.target.closest?e.target.closest('[data-i]'):null;if(!g)return;
+  var i=+g.getAttribute('data-i');
+  if(e.key==='Enter'||e.key===' '){e.preventDefault();select(i);}
+  else if(e.key==='ArrowRight'||e.key==='ArrowLeft'){
+    e.preventDefault();var n=Math.max(0,Math.min(N-1,i+(e.key==='ArrowRight'?1:-1)));
+    var t=$('#heroChart [data-i="'+n+'"]');if(t){t.focus();select(n);}
+  }
+});
+var rt;
+window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){drawCharts(false);},140);});
+$('#themeBtn').addEventListener('click',function(){
+  var root=document.documentElement,cur=root.getAttribute('data-theme');
+  var dark=cur?cur==='dark':window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var next=dark?'light':'dark';root.setAttribute('data-theme',next);
+  try{localStorage.setItem('rf-theme',next);}catch(e){}
+});
+$('#printBtn').addEventListener('click',function(){window.print();});
+})();
+</script>
+</body>
+</html>

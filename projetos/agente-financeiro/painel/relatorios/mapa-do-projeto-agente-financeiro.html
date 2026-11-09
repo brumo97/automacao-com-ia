@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mapa do projeto — Agente Financeiro</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🗺️%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem('rf-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
+<style>
+:root{
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+  --bg:#EDF0F4; --surface:#FFFFFF; --surface-2:#F5F7FA; --ink:#0D1B2A; --ink-2:#4A5A6E; --line:#D5DBE3;
+  --brass:#8F6616; --pos:#0B7A66; --neg:#B02E27;
+  --pos-soft:rgba(11,122,102,.10); --neg-soft:rgba(176,46,39,.10); --heat:143,102,22;
+  --bar-bg:rgba(237,240,244,.86);
+  --serif:"Instrument Serif","Iowan Old Style","Palatino Linotype",Georgia,serif;
+  --sans:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  color-scheme:dark; --bg:#0A1522; --surface:#0F1F33; --surface-2:#132840; --ink:#E9EEF5; --ink-2:#9FB0C4; --line:#223853;
+  --brass:#E0B965; --pos:#47CDB3; --neg:#FF7A6B; --pos-soft:rgba(71,205,179,.14); --neg-soft:rgba(255,122,107,.14);
+  --heat:224,185,101; --bar-bg:rgba(10,21,34,.86);}}
+:root[data-theme="dark"]{
+  color-scheme:dark; --bg:#0A1522; --surface:#0F1F33; --surface-2:#132840; --ink:#E9EEF5; --ink-2:#9FB0C4; --line:#223853;
+  --brass:#E0B965; --pos:#47CDB3; --neg:#FF7A6B; --pos-soft:rgba(71,205,179,.14); --neg-soft:rgba(255,122,107,.14);
+  --heat:224,185,101; --bar-bg:rgba(10,21,34,.86);}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{margin:0; background:var(--bg); color:var(--ink); font:1rem/1.6 var(--sans); font-variant-numeric:tabular-nums; -webkit-font-smoothing:antialiased}
+body::before{content:""; position:fixed; inset:0 0 auto; height:env(safe-area-inset-top,0px); z-index:30; background:var(--bar-bg); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px)}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--brass); outline-offset:3px; border-radius:3px}
+.wrap{max-width:1120px; margin-inline:auto; padding-inline:clamp(1rem,4vw,2.5rem)}
+h1,h2,h3{font-family:var(--serif); font-weight:400; margin:0; letter-spacing:-.01em}
+
+.bar{position:sticky; top:env(safe-area-inset-top,0px); z-index:20; background:var(--bar-bg); border-bottom:1px solid var(--line); -webkit-backdrop-filter:blur(14px); backdrop-filter:blur(14px)}
+.bar .wrap{display:flex; align-items:center; gap:1.25rem; min-height:60px}
+.brand{font-family:var(--serif); font-size:1.3rem; white-space:nowrap; text-decoration:none}
+.bar nav{display:flex; gap:.25rem; overflow-x:auto; flex:1; scrollbar-width:none}
+.bar nav::-webkit-scrollbar{display:none}
+.bar nav a{color:var(--ink-2); text-decoration:none; font-size:.88rem; font-weight:600; padding:.45rem .7rem; border-radius:6px; white-space:nowrap}
+.bar nav a:hover{color:var(--ink); background:var(--surface-2)}
+.btn{font:600 .8rem/1 var(--sans); color:var(--ink); background:transparent; border:1px solid var(--line); border-radius:999px; padding:.55rem .9rem; cursor:pointer}
+.btn:hover{border-color:var(--brass)}
+
+/* hero */
+.hero{--ink:#E9EEF5; --ink-2:#9FB0C4; --line:#223853; --surface:#0F1F33; --surface-2:#132840; --pos:#47CDB3; --neg:#FF7A6B; --brass:#E0B965;
+  --pos-soft:rgba(71,205,179,.14); --neg-soft:rgba(255,122,107,.14);
+  background:#0B1A2C; color:var(--ink); border-bottom:1px solid var(--brass); padding-block:clamp(2.5rem,6vw,4.25rem) clamp(2.25rem,5vw,3.25rem)}
+.meta{margin:0 0 1.1rem; color:var(--ink-2); font-size:.92rem}
+h1{font-size:clamp(2.2rem,5.4vw,4rem); line-height:1.05; max-width:22ch}
+.lead{max-width:64ch; color:var(--ink-2); font-size:1.07rem; margin:1.2rem 0 0}
+.lead strong{color:var(--ink); font-weight:600}
+
+.flow{display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1.9rem; margin:2.5rem 0 0; padding:0; list-style:none}
+.flow li{position:relative}
+.node{display:block; width:100%; height:100%; text-align:left; font:inherit; color:var(--ink); background:transparent; border:1px solid var(--line); border-radius:10px; padding:1rem 1rem 1.1rem; cursor:pointer}
+.node:hover{border-color:var(--brass)}
+.node[aria-pressed="true"]{border-color:var(--brass); background:var(--surface-2); box-shadow:inset 0 0 0 1px var(--brass)}
+.node small{display:block; color:var(--ink-2); font-weight:600; font-size:.8rem}
+.node strong{display:block; font-family:var(--serif); font-weight:400; font-size:clamp(1.3rem,2.2vw,1.65rem); line-height:1.15; margin:.25rem 0 .55rem; overflow-wrap:anywhere}
+.node span.what{display:block; color:var(--ink-2); font-size:.88rem; line-height:1.45; margin-bottom:.8rem}
+.chip{display:inline-block; font-size:.76rem; font-weight:700; padding:.12rem .6rem; border-radius:999px}
+.chip.ok{background:var(--pos-soft); color:var(--pos)}
+.chip.miss{background:var(--neg-soft); color:var(--neg)}
+.chip.warn{background:rgba(var(--heat),.16); color:var(--brass)}
+.node.missing{border-style:dashed; border-color:var(--neg)}
+.flow li:not(:last-child)::after{content:""; position:absolute; top:50%; right:-1.9rem; width:1.9rem; height:2px; background:var(--ink-2); transform:translateY(-1px); pointer-events:none}
+.flow li:not(:last-child)::before{content:""; position:absolute; top:50%; right:-1.9rem; width:9px; height:9px; border-top:2px solid var(--ink-2); border-right:2px solid var(--ink-2); transform:translateY(-5px) rotate(45deg); pointer-events:none}
+.bridge{margin:1.25rem 0 0; display:flex; flex-wrap:wrap; align-items:center; gap:.5rem .75rem; color:var(--ink-2); font-size:.88rem}
+.bridge .chip{border:1px dashed var(--brass); color:var(--brass); background:transparent}
+.detail{margin-top:2rem; padding-top:1.75rem; border-top:1px solid var(--line); display:grid; grid-template-columns:minmax(220px,1fr) 2fr; gap:1.5rem clamp(1.5rem,4vw,3.5rem)}
+.detail h2{font-size:clamp(1.6rem,3vw,2.2rem); line-height:1.1}
+.detail .one{margin:.6rem 0 0; color:var(--ink-2)}
+.detail dl{margin:0; display:grid; gap:0}
+.detail dl > div{display:grid; grid-template-columns:7rem 1fr; gap:1rem; padding:.7rem 0; border-bottom:1px solid var(--line)}
+.detail dt{color:var(--ink-2); font-size:.86rem; font-weight:600}
+.detail dd{margin:0; font-size:.95rem}
+.hint{margin:1rem 0 0; color:var(--ink-2); font-size:.84rem}
+
+/* seções */
+.sec{padding-block:clamp(2.75rem,6vw,4.5rem); border-top:1px solid var(--line)}
+.hero + .sec{border-top:0}
+.sec h2{font-size:clamp(1.9rem,3.6vw,2.7rem); line-height:1.1}
+.intro{max-width:66ch; color:var(--ink-2); margin:.9rem 0 2rem}
+.intro strong{color:var(--ink)}
+.cols{display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.5rem,4vw,3.5rem); align-items:start}
+.cols h3{font-size:1.5rem; margin-bottom:.8rem}
+.explain{display:grid; gap:1.1rem}
+.explain div{padding-left:1rem; border-left:3px solid var(--brass)}
+.explain b{display:block}
+.explain p{margin:.2rem 0 0; color:var(--ink-2); font-size:.95rem}
+ol.tl{list-style:none; margin:0; padding:0 0 0 1.5rem; border-left:2px solid var(--line)}
+ol.tl li{position:relative; padding:0 0 1.5rem 1rem}
+ol.tl li::before{content:""; position:absolute; left:calc(-1.5rem - 7px); top:.45rem; width:12px; height:12px; border-radius:50%; background:var(--bg); border:3px solid var(--brass)}
+ol.tl li.now::before{background:var(--brass)}
+ol.tl b{display:block; font-size:.86rem; color:var(--brass)}
+ol.tl span{display:block}
+ol.tl small{display:block; color:var(--ink-2); font-size:.86rem}
+.scroll-x{overflow-x:auto; -webkit-overflow-scrolling:touch}
+table{width:100%; border-collapse:collapse; font-size:.92rem}
+th{color:var(--ink-2); font-weight:600; font-size:.82rem; text-align:left; padding:.6rem .8rem; border-bottom:1px solid var(--ink-2); white-space:nowrap}
+td{padding:.9rem .8rem; border-bottom:1px solid var(--line); vertical-align:top}
+td:first-child{font-weight:700; white-space:nowrap}
+td ul{margin:0; padding:0; list-style:none; display:grid; gap:.25rem}
+ul.dash{list-style:none; margin:0; padding:0; display:grid; gap:.4rem}
+ul.dash li{position:relative; padding-left:1.1rem}
+ul.dash li::before{content:"–"; position:absolute; left:0; color:var(--ink-2); font-weight:700}
+tr.absent td{background:var(--neg-soft)}
+.rules{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.5rem; margin-top:2.5rem}
+.rule{border-top:3px solid var(--neg); padding-top:.9rem}
+.rule .n{font-family:var(--serif); font-size:2.6rem; line-height:1; color:var(--neg); display:block}
+.rule b{display:block; margin:.35rem 0 .2rem}
+.rule span.d{color:var(--ink-2); font-size:.9rem}
+.tabs{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden}
+.tab{background:var(--surface); padding:1.25rem clamp(1rem,2.5vw,1.5rem)}
+.tab h3{font-size:1.45rem}
+.tab p{margin:.3rem 0 .8rem; color:var(--ink-2); font-size:.9rem}
+.cc{display:flex; flex-wrap:wrap; gap:.35rem}
+.cc code{font:600 .78rem var(--sans); background:var(--surface-2); border:1px solid var(--line); border-radius:4px; padding:.1rem .5rem}
+.nums{display:flex; flex-wrap:wrap; gap:1.25rem clamp(1.5rem,4vw,3.5rem); margin:2rem 0 0; padding-top:1.5rem; border-top:1px solid var(--line)}
+.nums dt{color:var(--ink-2); font-size:.84rem; font-weight:500}
+.nums dd{margin:.1rem 0 0; font-family:var(--serif); font-size:clamp(1.5rem,2.8vw,2rem); line-height:1.1}
+.neg{color:var(--neg)}
+.verdict{margin-top:2.5rem; display:grid; grid-template-columns:minmax(220px,1fr) 2fr; gap:1.5rem clamp(1.5rem,4vw,3rem); padding:1.6rem 0 1.6rem 1.4rem; border-left:3px solid var(--brass); background:linear-gradient(90deg,rgba(var(--heat),.12),transparent 60%)}
+.verdict h3{font-size:1.7rem; line-height:1.15}
+.verdict ul{margin:0; padding:0; list-style:none; display:grid; gap:.8rem}
+.verdict li{display:grid; grid-template-columns:5.5rem 1fr; gap:1rem}
+.tag{align-self:start; justify-self:start; font-size:.78rem; font-weight:700; padding:.15rem .6rem; border-radius:4px; border:1px solid var(--line)}
+.tag.fato{color:var(--pos); border-color:var(--pos)}
+.tag.inf{color:var(--brass); border-color:var(--brass)}
+.tag.conseq{color:var(--neg); border-color:var(--neg)}
+ul.tree,ul.tree ul{list-style:none; margin:0; padding:0}
+ul.tree ul{margin-left:1.1rem; padding-left:1.1rem; border-left:2px solid var(--line)}
+ul.tree li{padding:.35rem 0}
+.row{display:flex; flex-wrap:wrap; align-items:baseline; gap:.3rem .7rem}
+.place{font-family:var(--serif); font-size:1.45rem; line-height:1.2}
+.file{font-weight:600; overflow-wrap:anywhere}
+.row small{color:var(--ink-2)}
+.tree .grp{margin-top:1.25rem}
+.board{display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:10px; overflow:hidden}
+.col{background:var(--surface); padding:1.4rem clamp(1rem,2.5vw,1.6rem)}
+.col h3{font-size:1.5rem; margin-bottom:.9rem; padding-bottom:.6rem; border-bottom:3px solid var(--pos)}
+.col.todo h3{border-bottom-color:var(--brass)}
+.col.ask h3{border-bottom-color:var(--neg)}
+.col li{font-size:.94rem}
+.col small{display:block; color:var(--ink-2); font-size:.84rem}
+ol.how{list-style:none; margin:2.5rem 0 0; padding:0; counter-reset:h; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1.5rem}
+ol.how li{counter-increment:h; border-top:2px solid var(--ink); padding-top:.9rem}
+ol.how li::before{content:counter(h); font-family:var(--serif); font-size:2rem; color:var(--brass); line-height:1; display:block; margin-bottom:.3rem}
+ol.how b{display:block}
+ol.how span{color:var(--ink-2); font-size:.92rem}
+footer{border-top:1px solid var(--line); padding-block:2.25rem 3.5rem; color:var(--ink-2); font-size:.86rem}
+footer p{max-width:80ch; margin:.4rem 0}
+
+@media (max-width:900px){
+  .flow{grid-template-columns:1fr; gap:1.9rem}
+  .flow li:not(:last-child)::after{top:auto; bottom:-1.9rem; left:50%; right:auto; width:2px; height:1.9rem; transform:translateX(-1px)}
+  .flow li:not(:last-child)::before{top:auto; bottom:-1.95rem; left:50%; right:auto; transform:translateX(-5px) rotate(135deg)}
+  .detail,.cols,.verdict,.rules,.tabs,.board,ol.how{grid-template-columns:1fr}
+  .detail dl > div{grid-template-columns:1fr; gap:.15rem}
+  .verdict li{grid-template-columns:1fr; gap:.3rem}
+}
+@media (max-width:560px){.btn.print{display:none}}
+@media print{
+  body::before,.bar{display:none}
+  :root,:root[data-theme="dark"]{--bg:#fff; --surface:#fff; --surface-2:#f4f6f8; --ink:#0D1B2A; --ink-2:#4A5A6E; --line:#cfd6de; --brass:#8F6616; --pos:#0B7A66; --neg:#B02E27; --heat:143,102,22}
+  .hero,.verdict,tr.absent td,.chip{-webkit-print-color-adjust:exact; print-color-adjust:exact}
+  .sec,.verdict,.board{break-inside:avoid}
+}
+</style>
+</head>
+<body>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#resumo">Mapa do projeto</a>
+    <nav aria-label="Seções">
+      <a href="#resumo">Fluxo</a><a href="#contexto">Contexto</a><a href="#skills">Skills</a><a href="#dados">Dados</a><a href="#arquivos">Arquivos</a><a href="#situacao">Situação</a>
+    </nav>
+    <button class="btn" id="themeBtn" type="button" aria-label="Alternar tema claro e escuro">Tema</button>
+    <button class="btn print" id="printBtn" type="button">Imprimir ou salvar PDF</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="resumo" aria-labelledby="h1">
+    <div class="wrap">
+      <p class="meta">Projeto Agente Financeiro. Gerado em 9 de novembro de 2026.</p>
+      <h1 id="h1">Uma linha de montagem de três skills, com a última peça faltando.</h1>
+      <p class="lead">A ideia do projeto: você entrega uma <strong>planilha de finanças</strong> e o Claude devolve um <strong>relatório</strong>. Cada etapa é uma <strong>skill</strong>, um conjunto de instruções que o Claude segue quando o seu pedido combina com a descrição dela. <strong>Toque em cada etapa</strong> para ver o que ela recebe, faz e entrega.</p>
+
+      <ol class="flow" id="flow" aria-label="Etapas do fluxo"></ol>
+      <p class="bridge"><span>Enquanto a etapa 3 não existe como skill, foi suprida assim:</span><span class="chip">08/11: relatório .txt montado direto, no Cowork</span><span class="chip">09/11: 3 páginas HTML, nesta conversa</span></p>
+
+      <div class="detail" id="detail" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="contexto" aria-labelledby="h-ctx">
+    <div class="wrap">
+      <h2 id="h-ctx">O contexto em poucas linhas</h2>
+      <p class="intro">O que é o projeto, como ele funciona e o que aconteceu até agora. Tudo aqui vem de arquivos e datas que existem no Drive; o que é leitura minha está marcado como inferência.</p>
+      <div class="cols">
+        <div>
+          <h3>Como o projeto funciona</h3>
+          <div class="explain">
+            <div><b>Objetivo</b><p>Transformar uma planilha de gastos e receitas em um relatório que mostre o que aconteceu, o que está fora do normal e o que fazer.</p></div>
+            <div><b>O que é uma skill</b><p>Pense numa receita de cozinha com título e descrição. O Claude só abre a receita quando o seu pedido combina com a descrição, e então segue os passos escritos nela, sempre no mesmo formato.</p></div>
+            <div><b>Quem faz o quê</b><p>Você fornece a planilha e decide o que fazer com os resultados. O Claude aplica as skills em sequência. O Drive guarda a planilha e os relatórios.</p></div>
+            <div><b>Regra combinada</b><p>O foco do trabalho é só a pasta “Projeto Agente Financeiro” do Drive.</p></div>
+          </div>
+        </div>
+        <div>
+          <h3>Linha do tempo</h3>
+          <ol class="tl">
+            <li><b>06/11</b><span>Pasta do projeto criada no Drive, com a planilha financas_pessoais_2024.xlsx.</span><small>Combinado: foco só nessa pasta.</small></li>
+            <li><b>08/11</b><span>O fluxo leitor, depois analisador, roda duas vezes e salva o relatório em .txt.</span><small>Duas cópias idênticas, na raiz do Drive e não na pasta do projeto. Nota no rodapé: a skill relatorio-financeiro não existe.</small></li>
+            <li class="now"><b>09/11</b><span>Esta conversa: relatório completo e resumo executivo em HTML, na nuvem e como arquivos, mais este mapa.</span><small>Não foi possível ler a pasta local ClaudeCowork daqui.</small></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="skills" aria-labelledby="h-sk">
+    <div class="wrap">
+      <h2 id="h-sk">As skills, lado a lado</h2>
+      <p class="intro">Duas existem e seguem o mesmo molde: recebem algo, aplicam passos fixos, entregam um texto em formato obrigatório e acionam a próxima. A terceira é citada pela segunda, mas não está na conta.</p>
+      <div class="scroll-x">
+        <table>
+          <thead><tr><th scope="col">Skill</th><th scope="col">Quando entra</th><th scope="col">Recebe</th><th scope="col">Entrega</th><th scope="col">Depois dela</th></tr></thead>
+          <tbody>
+            <tr><td>leitor-financeiro</td><td>Pedido de “ler planilha”, “perfil financeiro” ou “resumo dos dados”.</td><td>As abas Resumo Mensal e Gastos por Categoria da planilha.</td><td>O PERFIL FINANCEIRO: resumo mensal, média e total por categoria, e destaques.</td><td>Aciona o analisador-financeiro. Não cria arquivo.</td></tr>
+            <tr><td>analisador-financeiro</td><td>Logo depois do leitor.</td><td>O perfil que está na conversa.</td><td>A ANÁLISE FINANCEIRA: alertas, tendências, destaques positivos e resumo.</td><td>Manda acionar o relatorio-financeiro. Não cria arquivo.</td></tr>
+            <tr class="absent"><td>relatorio-financeiro</td><td>Depois do analisador.</td><td>Perfil e análise.</td><td>Relatório final. <em>Não existe na conta.</em></td><td>O fluxo termina sem ele.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="rules">
+        <div class="rule"><span class="n">3</span><b>Categoria 20% acima da média</b><span class="d">Regra: gasto de uma categoria 20% ou mais acima da média dos 3 meses anteriores. Ocorrências nos dados: Outros em abril, Lazer em maio, Educação em maio.</span></div>
+        <div class="rule"><span class="n">5</span><b>Mês com saldo negativo</b><span class="d">Regra: qualquer mês em que a despesa passou da receita. Ocorrências nos dados: janeiro a maio.</span></div>
+        <div class="rule"><span class="n">6</span><b>Poupança abaixo de 20%</b><span class="d">Regra: taxa de poupança menor que 20% da receita do mês. Ocorrências nos dados: os 6 meses.</span></div>
+      </div>
+      <p class="hint" style="margin-top:1rem">Total: 14 ocorrências de alerta, que são as regras do analisador-financeiro aplicadas à planilha. A análise também aponta tendências (3 meses seguidos na mesma direção) e destaques positivos (poupança acima de 30%, categorias abaixo da média).</p>
+      <p class="hint">Há outras skills na conta (organizador-de-arquivos, processador-de-documentos, quiz-generator, decisao-praxis, doc-transformer). Não fazem parte deste projeto e ficaram de fora, para manter o foco na pasta.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="dados" aria-labelledby="h-da">
+    <div class="wrap">
+      <h2 id="h-da">Os dados de entrada</h2>
+      <p class="intro">Uma planilha com três abas, de janeiro a junho de 2024, em reais.</p>
+      <div class="tabs">
+        <article class="tab"><h3>Lançamentos</h3><p>Uma linha para cada receita ou gasto.</p><div class="cc"><code>Data</code><code>Descrição</code><code>Categoria</code><code>Tipo</code><code>Valor (R$)</code><code>Mês</code><code>Ano</code></div></article>
+        <article class="tab"><h3>Resumo Mensal</h3><p>O fechamento de cada mês, com total.</p><div class="cc"><code>Mês</code><code>Receita</code><code>Despesas</code><code>Saldo</code><code>% Poupança</code></div></article>
+        <article class="tab"><h3>Gastos por Categoria</h3><p>Oito categorias, mês a mês.</p><div class="cc"><code>Moradia</code><code>Alimentação</code><code>Transporte</code><code>Saúde</code><code>Lazer</code><code>Educação</code><code>Assinaturas</code><code>Outros</code></div></article>
+      </div>
+      <dl class="nums">
+        <div><dt>Período</dt><dd>6 meses</dd></div>
+        <div><dt>Receita total</dt><dd>R$ 36.200,00</dd></div>
+        <div><dt>Despesas totais</dt><dd>R$ 39.120,83</dd></div>
+        <div><dt>Saldo</dt><dd class="neg">−R$ 2.920,83</dd></div>
+      </dl>
+
+      <div class="verdict">
+        <div><h3>Esses dados são de exemplo ou são seus?</h3><p class="hint" style="margin-top:.6rem">Ainda não está confirmado. Pesa porque as recomendações dos relatórios só valem para quem é dono dos dados.</p></div>
+        <ul>
+          <li><span class="tag fato">Fato</span><span>O arquivo se chama “Apresentação do módulo e do projeto - financas_pessoais_2024.xlsx”.</span></li>
+          <li><span class="tag fato">Fato</span><span>A planilha está em reais e cobre 2024. As finanças que você declarou ao Claude estão em euros.</span></li>
+          <li><span class="tag inf">Inferência</span><span>Parece um conjunto de dados de exemplo de um módulo de curso, usado para treinar o fluxo de skills.</span></li>
+          <li><span class="tag conseq">Consequência</span><span>Se for exemplo, os relatórios ensinam o método, mas as recomendações (poupar 20%, rever moradia, tetos de gasto) não se aplicam às suas finanças reais.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="arquivos" aria-labelledby="h-ar">
+    <div class="wrap">
+      <h2 id="h-ar">Onde está cada arquivo</h2>
+      <p class="intro">Três lugares: o Drive (de onde vêm os dados), a nuvem do Claude (relatórios publicados) e a pasta do seu PC.</p>
+      <ul class="tree">
+        <li class="grp"><div class="row"><span class="place">Google Drive</span></div>
+          <ul>
+            <li><div class="row"><span class="file">Projeto Agente Financeiro/</span><span class="chip ok">Pasta do projeto</span></div>
+              <ul><li><div class="row"><span class="file">financas_pessoais_2024.xlsx</span><span class="chip ok">Fonte dos dados</span></div></li></ul></li>
+            <li><div class="row"><span class="file">relatorio_financeiro_novembro_2026-11-08.txt</span><span class="chip warn">2 cópias idênticas</span><span class="chip miss">Fora da pasta do projeto</span></div><small>Estão na raiz do Drive.</small></li>
+          </ul></li>
+        <li class="grp"><div class="row"><span class="place">Nuvem do Claude</span><small>privadas até você compartilhar</small></div>
+          <ul>
+            <li><div class="row"><a class="file" data-hosted="relatorio-financeiro-completo.html" data-local="relatorio-financeiro-completo.html" href="relatorio-financeiro-completo.html">Relatório financeiro completo</a><span class="chip ok">Publicado</span></div></li>
+            <li><div class="row"><a class="file" data-hosted="resumo-executivo-financeiro.html" data-local="resumo-executivo-financeiro.html" href="resumo-executivo-financeiro.html">Resumo executivo</a><span class="chip ok">Publicado</span></div></li>
+            <li><div class="row"><span class="file">Mapa do projeto (esta página)</span><span class="chip ok">Publicado</span></div></li>
+          </ul></li>
+        <li class="grp"><div class="row"><span class="place">Seu PC</span><small>C:\Users\User\Desktop\ClaudeCowork</small></div>
+          <ul>
+            <li><div class="row"><span class="file">relatorio-financeiro-completo.html</span><span class="chip warn">Para baixar e salvar aqui</span></div></li>
+            <li><div class="row"><span class="file">resumo-executivo-financeiro.html</span><span class="chip warn">Para baixar e salvar aqui</span></div></li>
+            <li><div class="row"><span class="file">mapa-do-projeto-agente-financeiro.html</span><span class="chip warn">Para baixar e salvar aqui</span></div><small>Daqui o Claude não consegue ler nem gravar em pastas do PC. No Cowork, sim.</small></li>
+          </ul></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="situacao" aria-labelledby="h-si">
+    <div class="wrap">
+      <h2 id="h-si">Situação hoje</h2>
+      <p class="intro">O que está pronto, o que falta e o que só você pode decidir.</p>
+      <div class="board">
+        <article class="col"><h3>Feito</h3>
+          <ul class="dash">
+            <li>Pasta do projeto e planilha no Drive.</li>
+            <li>Etapas 1 e 2 (leitor e analisador) funcionando.</li>
+            <li>Relatório em .txt de 08/11.</li>
+            <li>Relatório completo e resumo executivo em HTML, na nuvem e como arquivos.</li>
+            <li>Todos os números conferidos contra a planilha.</li></ul></article>
+        <article class="col todo"><h3>Falta</h3>
+          <ul class="dash">
+            <li>A skill relatorio-financeiro, a etapa 3.</li>
+            <li>Guardar os relatórios dentro da pasta do projeto no Drive.<small>Hoje o .txt está na raiz, em duas cópias.</small></li>
+            <li>Ler a pasta local ClaudeCowork.<small>Só é possível pelo Cowork.</small></li>
+            <li>Atualizar a planilha com meses mais recentes.<small>Os dados vão só até junho de 2024.</small></li></ul></article>
+        <article class="col ask"><h3>Decisão sua</h3>
+          <ul class="dash">
+            <li>Os dados são de exemplo ou reais?<small>Define se as recomendações são lição ou plano.</small></li>
+            <li>Transformar os relatórios na skill da etapa 3?</li>
+            <li>Copiar os relatórios para a pasta do projeto no Drive?</li></ul></article>
+      </div>
+
+      <ol class="how">
+        <li><b>Pedir a leitura</b><span>Diga “ler planilha” ou “perfil financeiro”. O leitor-financeiro gera o perfil.</span></li>
+        <li><b>A análise vem em seguida</b><span>O analisador-financeiro usa o perfil da conversa e aplica as 3 regras de alerta.</span></li>
+        <li><b>Gerar o relatório</b><span>Hoje isso é manual (pedir o HTML ao Claude). Com a skill da etapa 3, seria automático.</span></li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Fontes: arquivos e datas do Google Drive (pasta Projeto Agente Financeiro e relatório de 08/11), instruções das skills leitor-financeiro e analisador-financeiro, e as anotações do projeto. Datas sem horário, para evitar confusão de fuso.</p>
+    <p>Onde há inferência, a página marca como inferência. Os relatórios descrevem os dados da planilha e não são recomendação financeira ou de investimento.</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+var NODES=[
+  {id:'planilha',step:'Entrada',name:'Planilha de finanças',what:'financas_pessoais_2024.xlsx, no Drive',status:'ok',statusTxt:'Existe',
+   title:'Planilha de finanças',one:'É de onde tudo parte: seis meses de receitas e gastos, já resumidos em abas.',
+   rows:[['Onde','Drive, pasta Projeto Agente Financeiro.'],['Contém','Três abas: Lançamentos, Resumo Mensal e Gastos por Categoria.'],['Período','Janeiro a junho de 2024, em reais.'],['Atenção','Ainda não confirmado se são dados de exemplo ou reais (veja a seção Dados).']]},
+  {id:'leitor',step:'Etapa 1',name:'leitor-financeiro',what:'Lê a planilha e monta o perfil',status:'ok',statusTxt:'Existe',
+   title:'leitor-financeiro',one:'Transforma a planilha em um resumo compacto, sempre no mesmo formato.',
+   rows:[['Entra quando','Você pede “ler planilha”, “perfil financeiro” ou “resumo dos dados”.'],
+         ['Recebe','As abas Resumo Mensal e Gastos por Categoria.'],
+         ['Faz','<ul class="dash"><li>Registra receita, despesas, saldo e % de poupança de cada mês.</li><li>Soma o gasto de cada categoria por mês.</li><li>Calcula total, média, pico e menor mês por categoria.</li><li>Aponta o mês de maior e de menor receita.</li></ul>'],
+         ['Entrega','PERFIL FINANCEIRO: resumo mensal, categorias (média, total, pico) e destaques.'],
+         ['Regra','Não cria arquivo. Ao terminar, aciona o analisador-financeiro.']]},
+  {id:'analisador',step:'Etapa 2',name:'analisador-financeiro',what:'Acha alertas, tendências e pontos positivos',status:'ok',statusTxt:'Existe',
+   title:'analisador-financeiro',one:'Lê o perfil e diz o que merece atenção, com regras fixas.',
+   rows:[['Entra quando','Logo depois do leitor, usando o perfil que está na conversa.'],
+         ['Recebe','O PERFIL FINANCEIRO.'],
+         ['Faz','<ul class="dash"><li>Alertas: categoria 20% acima da média dos 3 meses anteriores; mês com saldo negativo; poupança abaixo de 20%.</li><li>Tendências: categorias que sobem ou caem por 3 meses seguidos; evolução da poupança.</li><li>Positivos: poupança acima de 30%; categorias abaixo da média.</li></ul>'],
+         ['Entrega','ANÁLISE FINANCEIRA: alertas, tendências, destaques e um resumo de 2 a 3 frases.'],
+         ['Regra','Não cria arquivo. Ao terminar, manda acionar o relatorio-financeiro.']]},
+  {id:'relatorio',step:'Etapa 3',name:'relatorio-financeiro',what:'Monta o relatório final',status:'miss',statusTxt:'Não existe na conta',missing:true,
+   title:'relatorio-financeiro',one:'É a skill que o analisador manda chamar, mas ela não foi criada. O fluxo para na análise.',
+   rows:[['Situação','Ausente. O relatório de 08/11 avisa que foi montado direto a partir do perfil e da análise.'],
+         ['Suprida por','O relatório .txt (08/11, Cowork) e as páginas HTML desta conversa (09/11).'],
+         ['Proposta','<em>Isto é uma sugestão, não algo que existe:</em> uma skill que receba perfil e análise, monte o relatório em HTML e o salve na pasta do projeto.']]}
+];
+var sel='leitor';
+function renderFlow(){
+  var ol=document.getElementById('flow');
+  ol.innerHTML=NODES.map(function(n){
+    return '<li><button type="button" class="node'+(n.missing?' missing':'')+'" data-id="'+n.id+'" aria-pressed="'+(n.id===sel)+'"><small>'+n.step+'</small><strong>'+n.name+'</strong><span class="what">'+n.what+'</span><span class="chip '+n.status+'">'+n.statusTxt+'</span></button></li>';
+  }).join('');
+}
+function renderDetail(){
+  var n=NODES.filter(function(x){return x.id===sel;})[0];
+  document.getElementById('detail').innerHTML=
+    '<div><h2>'+n.title+'</h2><p class="one">'+n.one+'</p></div><dl>'+
+    n.rows.map(function(r){return '<div><dt>'+r[0]+'</dt><dd>'+r[1]+'</dd></div>';}).join('')+'</dl>';
+}
+function pick(id){sel=id;
+  var b=document.querySelectorAll('#flow .node');
+  for(var i=0;i<b.length;i++){b[i].setAttribute('aria-pressed',b[i].getAttribute('data-id')===id);}
+  renderDetail();
+}
+renderFlow();renderDetail();
+document.getElementById('flow').addEventListener('click',function(e){
+  var b=e.target.closest?e.target.closest('.node'):null;if(b)pick(b.getAttribute('data-id'));
+});
+if(location.protocol!=='file:'){
+  var as=document.querySelectorAll('a[data-hosted]');
+  for(var i=0;i<as.length;i++){as[i].href=as[i].getAttribute('data-hosted');as[i].target='_blank';as[i].rel='noopener';}
+}
+document.getElementById('themeBtn').addEventListener('click',function(){
+  var root=document.documentElement,cur=root.getAttribute('data-theme');
+  var dark=cur?cur==='dark':(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches);
+  var next=dark?'light':'dark';root.setAttribute('data-theme',next);
+  try{localStorage.setItem('rf-theme',next);}catch(e){}
+});
+document.getElementById('printBtn').addEventListener('click',function(){window.print();});
+})();
+</script>
+</body>
+</html>

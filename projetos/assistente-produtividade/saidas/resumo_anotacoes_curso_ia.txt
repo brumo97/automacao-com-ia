@@ -1,0 +1,21 @@
+Arquivo processado: anotacoes_curso_ia.txt
+Tipo identificado: Outro (anotações de curso)
+Salvo em: /saidas/resumo_anotacoes_curso_ia.txt
+
+RESUMO — ANOTAÇÕES DO CURSO DE IA APLICADA
+Fonte: entrada/Inteligencia_Artificial/anotacoes_curso_ia.txt
+Início do curso: março de 2024 | 4 aulas registradas
+
+PONTOS PRINCIPAIS
+- Aula 1: IA é reconhecimento de padrões aprendidos com dados; no dia a dia usamos "narrow AI" (Netflix, Spotify, Maps)
+- Aula 2: LLMs preveem a próxima palavra; temperatura controla a criatividade; acesso à internet depende da versão
+- Aula 3: prompt eficaz = contexto + tarefa + formato; ser específico e dar exemplos
+- Aula 4: ChatGPT (textos gerais), Claude (documentos longos e raciocínio), Gemini (Google Workspace), Copilot (Microsoft 365) — ferramenta certa para cada tarefa
+
+DÚVIDA REGISTRADA
+- Como o modelo sabe o que é certo ou errado?
+
+PENDÊNCIAS (3 abertas)
+- Testar Claude com documento longo
+- Comparar ChatGPT vs Claude no mesmo prompt
+- Assistir aula bônus sobre automação

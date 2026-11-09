@@ -1,0 +1,124 @@
+RELATÓRIO FINANCEIRO PESSOAL
+Período: Janeiro a Junho de 2024 | Gerado em: 08/11/2026
+Fonte: planilha financas_pessoais_2024 (203 lançamentos)
+
+============================================================
+📌 VISÃO GERAL
+============================================================
+Em seis meses entraram R$ 36.200,00 e saíram R$ 39.120,83.
+Ou seja, gastou-se R$ 2.920,83 a mais do que se ganhou (-8,1% da receita).
+Cinco dos seis meses fecharam no vermelho; só junho fechou no azul.
+
+Média mensal: receita de R$ 6.033,33 e despesas de R$ 6.520,14.
+Com o salário-base de R$ 5.800,00, falta cerca de R$ 720 por mês para
+as contas fecharem.
+
+Para onde vai o dinheiro (total do semestre):
+- Moradia:      R$ 14.722,46  (37,6% de tudo o que foi gasto)
+- Alimentação:  R$  7.534,98
+- Transporte:   R$  4.263,11
+- Saúde:        R$  3.861,78
+- Lazer:        R$  3.304,29
+- Outros:       R$  2.557,93
+- Educação:     R$  2.030,28
+- Assinaturas:  R$    846,00
+
+============================================================
+✅ DESTAQUES POSITIVOS
+============================================================
+- Junho foi o primeiro mês positivo: sobrou R$ 410,08 (6,0% da receita).
+  A receita foi a maior do semestre (R$ 6.800,00) e as despesas ficaram
+  abaixo da média mensal.
+- Em junho, cinco categorias gastaram menos que a própria média do
+  semestre: Alimentação, Transporte, Lazer, Educação e Outros.
+- Alimentação vem caindo há três meses (abril a junho), de R$ 1.353,51
+  para R$ 1.215,46.
+- Transporte caiu de fevereiro a maio, de R$ 820,19 para R$ 648,12.
+- Assinaturas ficaram fixas em R$ 141,00 todo mês, sem aumento.
+- Moradia é estável (variação de cerca de 3% entre os meses), o que
+  facilita o planejamento.
+
+Observação honesta: nenhum mês chegou perto da meta de poupar 20% da
+renda, então este bloco mostra bons sinais, não uma meta atingida.
+
+============================================================
+🚨 PONTOS DE ATENÇÃO
+============================================================
+Meses no vermelho (gastou mais do que ganhou):
+- Janeiro: -R$ 349,99
+- Fevereiro: -R$ 553,90
+- Março: -R$ 539,99
+- Abril: -R$ 1.018,22 (o pior mês)
+- Maio: -R$ 868,81
+
+Gastos que fugiram do normal (20% ou mais acima da média dos 3 meses
+anteriores):
+- Outros, em abril: R$ 788,32, cerca de 144% acima do habitual
+  (R$ 323,14). Pesou uma compra de eletrônico de R$ 555,82.
+- Lazer, em maio: R$ 774,85, cerca de 81% acima do habitual
+  (R$ 427,65). Pesaram uma viagem (R$ 335,38) e restaurantes
+  (R$ 270,66).
+- Educação, em maio: R$ 423,29, cerca de 40% acima do habitual
+  (R$ 302,18).
+
+Poupança:
+- Em nenhum mês a poupança passou de 20% da receita (o ideal). A melhor
+  foi 6,0%, em junho.
+- A poupança piorou de janeiro (-6,0%) até abril (-17,6%) e só voltou
+  ao positivo em junho.
+
+Atenção ao resultado de junho: ele veio de uma receita extra (bônus que
+levou a receita de R$ 5.800 para R$ 6.800), não de uma redução clara de
+gastos. Sem esse extra, junho também teria fechado no vermelho.
+
+============================================================
+📊 RESUMO MENSAL
+============================================================
+Mês        | Receita       | Despesas      | Saldo         | Poupança
+Janeiro    | R$ 5.800,00   | R$ 6.149,99   | -R$ 349,99    | -6,0%
+Fevereiro  | R$ 5.800,00   | R$ 6.353,90   | -R$ 553,90    | -9,6%
+Março      | R$ 6.200,00   | R$ 6.739,99   | -R$ 539,99    | -8,7%
+Abril      | R$ 5.800,00   | R$ 6.818,22   | -R$ 1.018,22  | -17,6%
+Maio       | R$ 5.800,00   | R$ 6.668,81   | -R$ 868,81    | -15,0%
+Junho      | R$ 6.800,00   | R$ 6.389,92   | +R$ 410,08    | +6,0%
+TOTAL      | R$ 36.200,00  | R$ 39.120,83  | -R$ 2.920,83  | -8,1%
+
+Média por categoria (por mês):
+- Moradia R$ 2.453,74 | Alimentação R$ 1.255,83 | Transporte R$ 710,52
+- Saúde R$ 643,63 | Lazer R$ 550,72 | Outros R$ 426,32
+- Educação R$ 338,38 | Assinaturas R$ 141,00
+
+============================================================
+💡 RECOMENDAÇÕES
+============================================================
+O ponto de partida é fechar o mês sem déficit; chegar aos 20% de
+poupança vem depois. Os valores abaixo são estimativas a partir da
+média do semestre, para você ajustar à sua realidade.
+
+1. Meta do próximo período: gastar no máximo o que entra (saldo igual
+   ou maior que zero), contando só o salário-base, sem bônus.
+
+2. Definir um teto mensal para os gastos que mais variam:
+   - Lazer: de R$ 551 para cerca de R$ 400 (economia de ~R$ 150)
+   - Outros: de R$ 426 para cerca de R$ 250 (economia de ~R$ 176)
+   - Alimentação: de R$ 1.256 para cerca de R$ 1.150 (~R$ 106)
+   - Transporte: de R$ 711 para cerca de R$ 650 (~R$ 61)
+   - Educação: manter em R$ 286 (base fixa) (~R$ 52)
+   Somando, são cerca de R$ 545 por mês.
+
+3. Compras grandes (eletrônicos, viagens): planejar com antecedência e
+   reservar um valor por mês, em vez de pagar tudo num mês só. Foi
+   isso que estourou abril e maio.
+
+4. Os cerca de R$ 175 que ainda faltam para zerar o déficit não saem só
+   de cortes pequenos. Vale olhar o peso da Moradia (37,6% dos gastos)
+   ou aumentar a renda fixa. Chegar aos 20% de poupança (cerca de
+   R$ 1.160 por mês sobre R$ 5.800) exige uma dessas mudanças maiores.
+
+5. Se houver bônus ou renda extra, definir antes o destino (por exemplo,
+   cobrir o déficit acumulado de R$ 2.920,83) em vez de absorver nos
+   gastos do mês.
+
+6. Revisar a planilha uma vez por mês, comparando com o mês anterior,
+   e checar se algum gasto passou de 20% acima da média dos 3 meses
+   anteriores.

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Painel analítico — Agente Financeiro</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📈%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem('rf-theme');if(t==='light'||t==='dark'){document.documentElement.setAttribute('data-theme',t);}}catch(e){}</script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="top" id="top">
+  <div class="wrap">
+    <div class="head">
+      <div class="brand"><b>Agente Financeiro</b><span>Painel analítico, jan a jun 2024</span></div>
+      <nav class="tabs" aria-label="Seções do painel">
+        <a href="#o-case">O case</a>
+        <a href="#visao-geral">Visão geral</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#lancamentos">Lançamentos</a>
+        <a href="#diagnostico">Diagnóstico</a>
+        <a href="#metodo">Método</a>
+      </nav>
+      <div class="actions">
+        <button class="icon-btn" id="themeBtn" type="button" aria-label="Alternar tema claro e escuro"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.2" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 1.8a6.2 6.2 0 0 1 0 12.4z" fill="currentColor"/></svg><span class="btxt">Tema</span></button>
+        <div class="lang-toggle" id="langToggle" role="radiogroup" aria-label="Idioma"></div>
+        <button class="icon-btn" id="printBtn" type="button" aria-label="Imprimir"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 6V2.5h7V6M4.5 11.5H3a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v3.5a1 1 0 0 1-1 1h-1.5M4.5 9.5h7v4h-7z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span class="btxt">Imprimir</span></button>
+      </div>
+    </div>
+    <button class="ftoggle" id="fToggle" type="button" aria-expanded="false" aria-controls="filters"><svg class="ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 3h12l-4.5 5.5V13l-3-1.5V8.5z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span>Filtros</span><span class="ft-dot" aria-hidden="true"></span><span class="ft-s" id="fSummary"></span><svg class="chv" viewBox="0 0 10 10" aria-hidden="true"><path d="M2 3.5 5 6.5 8 3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="filters" id="filters" role="group" aria-label="Filtros">
+      <div class="fgroup" id="fMonths"><span class="flabel">Meses</span></div>
+      <div class="fgroup" id="fCats"><span class="flabel">Categorias</span></div>
+      <div class="scope"><span id="scopeTxt"></span><button class="reset" id="resetBtn" type="button">Limpar filtros</button></div>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <!-- O CASE -->
+  <section class="panel" id="p-o-case" aria-label="O case">
+    <div class="grid">
+      <div class="lead">
+        <p class="k">O case</p>
+        <h1>Um agente que transforma uma planilha de finanças em diagnóstico.</h1>
+        <div class="io">
+          <div><small>Entra</small><b>Planilha de receitas e despesas</b></div>
+          <span class="arrow" aria-hidden="true">→</span>
+          <div><small>Processa</small><b>3 skills em sequência</b></div>
+          <span class="arrow" aria-hidden="true">→</span>
+          <div><small>Sai</small><b>Perfil, alertas e onde agir</b></div>
+        </div>
+      </div>
+      <div class="card s4"><h2>Para que serve</h2><p class="txt">Mostrar para onde vai o dinheiro e onde agir, sem montar a análise à mão.</p></div>
+      <div class="card s4"><h2>O que faz</h2><p class="txt">Lê os dados, resume cada mês, aplica regras de alerta e entrega o relatório.</p></div>
+      <div class="card s4"><h2>O que encontrou aqui</h2>
+        <ul class="big"><li><b>5 de 6</b><span>meses com gasto acima da receita</span></li><li><b>90,5%</b><span>do gasto se repete todo mês</span></li><li><b>14</b><span>alertas pelas regras do projeto</span></li></ul></div>
+      <div class="card">
+        <h2>As skills</h2><p class="sub">Cada skill é um conjunto de instruções com uma única função. Uma entrega o resultado para a próxima.</p>
+        <ol class="pipe">
+          <li><small>Skill 1</small><b>leitor-financeiro</b><span class="f"><em>Função:</em> organizar os dados.</span><span class="f"><em>Entrega:</em> perfil de cada mês e categoria.</span><span class="st ok">Ativa</span></li>
+          <li><small>Skill 2</small><b>analisador-financeiro</b><span class="f"><em>Função:</em> interpretar o perfil.</span><span class="f"><em>Entrega:</em> alertas, tendências e pontos positivos.</span><span class="st ok">Ativa</span></li>
+          <li class="miss"><small>Skill 3</small><b>relatorio-financeiro</b><span class="f"><em>Função:</em> apresentar o resultado.</span><span class="f"><em>Entrega:</em> relatório final. Este painel cumpre o papel.</span><span class="st no">Ainda não existe</span></li>
+        </ol>
+      </div>
+      <div class="card">
+        <h2>Como proceder</h2>
+        <ol class="steps4">
+          <li><b>Colocar a planilha</b><span>Na pasta do projeto no Drive.</span></li>
+          <li><b>Pedir a leitura</b><span>“Ler planilha” aciona o leitor-financeiro.</span></li>
+          <li><b>Deixar analisar</b><span>O analisador-financeiro roda logo em seguida.</span></li>
+          <li><b>Gerar e salvar</b><span>Relatório na nuvem e em C:\Users\User\Desktop\ClaudeCowork.</span></li>
+        </ol>
+        <p class="note">Dados desta planilha: janeiro a junho de 2024. Ainda não confirmado se são de exemplo ou reais.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISÃO GERAL -->
+  <section class="panel" id="p-visao-geral" aria-label="Visão geral">
+    <div class="grid">
+      <div class="lead">
+        <p class="k">Conclusão principal da análise</p>
+        <h1 id="leadH"></h1>
+        <p class="l" id="leadP"></p>
+        <dl class="kpis" id="kpis"></dl>
+      </div>
+      <div class="card s8">
+        <div class="chead"><div><h2>Receita, despesas e saldo por mês</h2><p class="sub">Clique num mês para isolá-lo no painel inteiro.</p></div></div>
+        <div class="ch"><canvas id="cFlow" role="img" aria-label="Gráfico de receita, despesas e saldo por mês"></canvas></div>
+        <p class="read" id="rFlow"></p>
+      </div>
+      <div class="card s4">
+        <h2>Taxa de poupança contra a meta</h2><p class="sub">Linha tracejada: meta de 20% do projeto.</p>
+        <div class="ch"><canvas id="cSav" role="img" aria-label="Taxa de poupança mensal comparada à meta de 20%"></canvas></div>
+        <p class="read" id="rSav"></p>
+      </div>
+      <div class="card s5">
+        <h2>Para onde vai o dinheiro</h2><p class="sub">Clique numa categoria para filtrar por ela.</p>
+        <div class="ch tall"><canvas id="cCat" role="img" aria-label="Despesa total por categoria"></canvas></div>
+      </div>
+      <div class="card s7">
+        <h2>O que os dados dizem</h2><p class="sub">Achados do analista sobre o período completo, do mais ao menos importante.</p>
+        <ol class="find" id="finds"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIAS -->
+  <section class="panel" id="p-categorias" aria-label="Categorias">
+    <div class="grid">
+      <div class="card s7">
+        <div class="chead"><div><h2>Composição das despesas mês a mês</h2><p class="sub">Cada cor é uma categoria.</p></div>
+          <div class="seg" role="group" aria-label="Unidade"><button type="button" data-mode="abs" aria-pressed="true">R$</button><button type="button" data-mode="pct" aria-pressed="false">%</button></div></div>
+        <div class="ch tall"><canvas id="cStack" role="img" aria-label="Despesas mensais empilhadas por categoria"></canvas></div>
+      </div>
+      <div class="card s5">
+        <h2>Desvio de cada mês contra a média</h2><p class="sub">Quanto cada categoria gastou acima ou abaixo da própria média do período.</p>
+        <div class="scroll-x" tabindex="0" role="region" aria-label="Desvio de cada mês contra a média"><table class="hm" id="heat"></table></div>
+        <div class="legend"><span><i style="background:var(--neg)"></i>acima da média</span><span><i style="background:var(--pos)"></i>abaixo da média</span><span>cor mais forte, desvio maior</span></div>
+      </div>
+      <div class="card">
+        <h2>Raio-X da categoria</h2><p class="sub">Escolha uma categoria para ver a evolução e os itens que a compõem.</p>
+        <div class="catpick" id="catPick"></div>
+        <dl class="stats" id="catStats"></dl>
+        <div class="grid">
+          <div class="s7"><div class="ch short"><canvas id="cCatLine" role="img" aria-label="Evolução mensal da categoria escolhida"></canvas></div></div>
+          <div class="s5"><div class="ch short"><canvas id="cCatItems" role="img" aria-label="Itens que compõem a categoria escolhida"></canvas></div></div>
+        </div>
+        <p class="read" id="rCat"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LANÇAMENTOS -->
+  <section class="panel" id="p-lancamentos" aria-label="Lançamentos">
+    <div class="grid">
+      <div class="card s8">
+        <h2>Pareto dos gastos</h2><p class="sub">Itens do maior para o menor (barras) e o percentual acumulado (linha). A faixa tracejada marca 80%.</p>
+        <div class="chart-scroll" tabindex="0" role="region" aria-label="Pareto dos gastos"><div class="ch tall"><canvas id="cPareto" role="img" aria-label="Gráfico de Pareto dos itens de despesa"></canvas></div></div>
+        <p class="scroll-hint">Em telas pequenas, deslize o gráfico para os lados para ver todos os itens.</p>
+        <p class="read" id="rPareto"></p>
+      </div>
+      <div class="card s4">
+        <h2>Gasto fixo, recorrente ou eventual</h2><p class="sub">Classificação de cada item pela frequência ao longo dos 6 meses.</p>
+        <div class="ch"><canvas id="cMix" role="img" aria-label="Divisão do gasto entre contratual, recorrente e eventual"></canvas></div>
+        <p class="read" id="rMix"></p>
+      </div>
+      <div class="card s4">
+        <h2>Quando o dinheiro sai</h2><p class="sub">Gasto por faixa de dias do mês.</p>
+        <div class="ch short"><canvas id="cDays" role="img" aria-label="Despesa por faixa de dias do mês"></canvas></div>
+        <p class="read" id="rDays"></p>
+      </div>
+      <div class="card s8">
+        <h2>Todos os lançamentos</h2><p class="sub">Pesquise, ordene clicando no cabeçalho. Respeita os filtros do topo.</p>
+        <div class="tools"><input class="search" id="q" type="search" placeholder="Buscar por descrição ou categoria" aria-label="Buscar lançamentos"><span class="count" id="tCount"></span></div>
+        <div class="tbl" tabindex="0" role="region" aria-label="Todos os lançamentos"><table id="tbl"></table></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIAGNÓSTICO -->
+  <section class="panel" id="p-diagnostico" aria-label="Diagnóstico">
+    <div class="grid">
+      <div class="card">
+        <h2>Como os agentes do projeto processam estes dados</h2><p class="sub">O fluxo de skills que lê a planilha, analisa e gera o relatório.</p>
+        <ol class="pipe">
+          <li><small>Agente 1</small><b>leitor-financeiro</b><span>Lê as abas de resumo e monta o perfil: mês a mês, categorias, destaques.</span><span class="st ok">Ativo</span></li>
+          <li><small>Agente 2</small><b>analisador-financeiro</b><span>Aplica 3 regras de alerta, busca tendências e pontos positivos.</span><span class="st ok">Ativo</span></li>
+          <li class="miss"><small>Agente 3</small><b>relatorio-financeiro</b><span>Montaria o relatório final. Este painel faz esse papel por enquanto.</span><span class="st no">Não existe na conta</span></li>
+        </ol>
+      </div>
+      <div class="card s6">
+        <h2>Alertas pelas regras do projeto</h2><p class="sub" id="alSub"></p>
+        <ul class="al" id="alerts"></ul>
+      </div>
+      <div class="card s6">
+        <h2>O déficit é de patamar, não de exceção</h2><p class="sub">Despesa média mensal em cada cenário, contra o salário recorrente.</p>
+        <div class="ch"><canvas id="cStruct" role="img" aria-label="Comparação entre despesa média, despesa sem eventuais, salário e limite para poupar 20%"></canvas></div>
+        <p class="read" id="rStruct"></p>
+      </div>
+      <div class="card s6">
+        <h2>Onde o gasto é mais instável</h2><p class="sub">Variação mês a mês dos itens recorrentes (coeficiente de variação). Quanto maior, mais imprevisível.</p>
+        <div class="ch"><canvas id="cCv" role="img" aria-label="Coeficiente de variação dos itens recorrentes"></canvas></div>
+        <p class="read" id="rCv"></p>
+      </div>
+      <div class="card s6">
+        <h2>Qualidade e limites dos dados</h2><p class="sub">Checagens feitas antes de qualquer conclusão.</p>
+        <ul class="qa" id="qa"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÉTODO -->
+  <section class="panel" id="p-metodo" aria-label="Método">
+    <div class="grid">
+      <div class="card">
+        <h2>Definições usadas no painel</h2><p class="sub">Para ler qualquer número daqui sem ambiguidade.</p>
+        <div class="defs">
+          <div><b>Saldo</b><span>Receita menos despesas do mês.</span></div>
+          <div><b>Taxa de poupança</b><span>Saldo dividido pela receita do mês. A meta do projeto é 20%.</span></div>
+          <div><b>Contratual</b><span>Item com valor combinado que se repete: aluguel, condomínio, internet, plano de saúde, academia, assinaturas e cursos.</span></div>
+          <div><b>Recorrente</b><span>Item que aparece em 5 ou 6 dos 6 meses, com valor variável (supermercado, gasolina, contas de consumo).</span></div>
+          <div><b>Eventual</b><span>Item que aparece em até 4 dos 6 meses (eletrônico, viagem, consultas, consertos).</span></div>
+          <div><b>Coeficiente de variação</b><span>Desvio padrão dividido pela média. Mede o quanto um gasto oscila, em porcentagem da própria média.</span></div>
+          <div><b>Alerta de categoria</b><span>Gasto 20% ou mais acima da média dos 3 meses anteriores. Só avaliável de abril em diante.</span></div>
+          <div><b>Tendência</b><span>Três variações seguidas na mesma direção dentro de uma categoria.</span></div>
+        </div>
+        <p class="note">Fonte: planilha financas_pessoais_2024.xlsx (abas Lançamentos, Resumo Mensal e Gastos por Categoria). Os 203 lançamentos foram conferidos contra as abas de resumo: as 48 combinações de categoria e mês batem ao centavo. Ainda não está confirmado se os dados são de exemplo ou reais; as leituras descrevem a planilha e não são recomendação financeira.</p>
+      </div>
+    </div>
+  </section>
+  <footer>Gráficos com Chart.js (licença MIT), embutido no arquivo para funcionar sem internet.</footer>
+</main>
+
+<script src="../vendor/chart.umd.js"></script>
+<script src="../data/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+RESUMO — BRIEFING
+Arquivo original: entrada/Marketing_Digital/briefing_projeto_site.txt
+Projeto: Redesign do site institucional
+Cliente: Empresa XYZ Ltda | Responsável: Mariana Costa (Marketing) | Data: 10/03/2024
+
+OBJETIVO
+- Melhorar a experiência do usuário
+- Aumentar a taxa de conversão de leads em 25% em 6 meses
+- Público: empresas de médio porte (50-500 funcionários), decisores de TI, 35-55 anos
+
+ESCOPO
+- Redesign completo da home
+- Reestruturação de 6 páginas de produto
+- Nova página de cases de sucesso
+- Formulário de contato otimizado
+- Versão mobile responsiva
+- Restrições: sem cores muito vibrantes, sem páginas só de texto, manter logo e cores primárias
+
+PRAZO
+- 15/03 — aprovação do briefing
+- 05/04 — entrega do wireframe
+- 20/04 — aprovação do layout
+- 21/04 a 20/05 — desenvolvimento
+- 25/05/2024 — lançamento
+
+ORÇAMENTO
+- R$ 45.000 aprovados (inclui desenvolvimento e testes)
+
+CONTATO
+- Mariana Costa | mariana@empresaxyz.com.br | (11) 99999-0000

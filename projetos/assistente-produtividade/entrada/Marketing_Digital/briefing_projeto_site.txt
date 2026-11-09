@@ -1,0 +1,43 @@
+BRIEFING — REDESIGN DO SITE INSTITUCIONAL
+Cliente: Empresa XYZ Ltda
+Data: 10 de março de 2024
+Responsável: Mariana Costa (Marketing)
+
+OBJETIVO
+Redesenhar o site institucional para melhorar a experiência do usuário e aumentar a taxa de conversão de leads em 25% nos próximos 6 meses.
+
+PÚBLICO-ALVO
+- Empresas de médio porte (50 a 500 funcionários)
+- Decisores: diretores e gerentes de TI
+- Faixa etária predominante: 35 a 55 anos
+
+ESCOPO DO PROJETO
+- Redesign completo da home
+- Reestruturação das páginas de produto (6 páginas)
+- Nova página de cases de sucesso
+- Formulário de contato otimizado
+- Versão mobile responsiva
+
+REFERÊNCIAS VISUAIS
+Empresas cujos sites foram indicados como referência:
+- Empresa A: gosto pela navegação limpa
+- Empresa B: gosto pelo uso de cores e tipografia
+- Empresa C: gosto pela estrutura de cases
+
+NÃO FAZER
+- Não usar cores muito vibrantes
+- Não criar páginas com muito texto sem imagens
+- Não alterar a identidade visual existente (logo e cores primárias)
+
+PRAZO
+- Aprovação do briefing: 15/03
+- Entrega do wireframe: 05/04
+- Aprovação do layout: 20/04
+- Desenvolvimento: 21/04 a 20/05
+- Lançamento: 25/05/2024
+
+ORÇAMENTO APROVADO
+R$ 45.000 (incluindo desenvolvimento e testes)
+
+CONTATO PRINCIPAL
+Mariana Costa | mariana@empresaxyz.com.br | (11) 99999-0000

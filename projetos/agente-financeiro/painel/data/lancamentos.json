@@ -1,0 +1,1423 @@
+[
+ {
+  "data": "2024-01-01",
+  "descricao": "Salário",
+  "categoria": "Renda",
+  "tipo": "Receita",
+  "valor": 5800.0
+ },
+ {
+  "data": "2024-01-02",
+  "descricao": "Streaming",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 55.0
+ },
+ {
+  "data": "2024-01-02",
+  "descricao": "Spotify",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 21.0
+ },
+ {
+  "data": "2024-01-03",
+  "descricao": "Feira livre",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 181.27
+ },
+ {
+  "data": "2024-01-03",
+  "descricao": "Curso online",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 89.0
+ },
+ {
+  "data": "2024-01-03",
+  "descricao": "Netflix",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 39.0
+ },
+ {
+  "data": "2024-01-04",
+  "descricao": "Conta de água",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 94.19
+ },
+ {
+  "data": "2024-01-07",
+  "descricao": "Material didático",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 28.93
+ },
+ {
+  "data": "2024-01-08",
+  "descricao": "Conta de luz",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 202.0
+ },
+ {
+  "data": "2024-01-08",
+  "descricao": "iCloud",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 7.0
+ },
+ {
+  "data": "2024-01-09",
+  "descricao": "Farmácia",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 85.36
+ },
+ {
+  "data": "2024-01-11",
+  "descricao": "Plano de saúde",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 280.0
+ },
+ {
+  "data": "2024-01-12",
+  "descricao": "Restaurante",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 177.44
+ },
+ {
+  "data": "2024-01-13",
+  "descricao": "Viagem",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 428.98
+ },
+ {
+  "data": "2024-01-14",
+  "descricao": "Supermercado",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 667.39
+ },
+ {
+  "data": "2024-01-14",
+  "descricao": "Gasolina",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 390.13
+ },
+ {
+  "data": "2024-01-17",
+  "descricao": "Açougue",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 128.75
+ },
+ {
+  "data": "2024-01-18",
+  "descricao": "Internet",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 126.77
+ },
+ {
+  "data": "2024-01-18",
+  "descricao": "Hortifruti",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 98.06
+ },
+ {
+  "data": "2024-01-19",
+  "descricao": "Uber",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 95.43
+ },
+ {
+  "data": "2024-01-20",
+  "descricao": "Livros",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 99.53
+ },
+ {
+  "data": "2024-01-21",
+  "descricao": "Aluguel",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 1800.0
+ },
+ {
+  "data": "2024-01-21",
+  "descricao": "Mercearia",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 65.97
+ },
+ {
+  "data": "2024-01-21",
+  "descricao": "Doação",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 63.9
+ },
+ {
+  "data": "2024-01-22",
+  "descricao": "Amazon Prime",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 19.0
+ },
+ {
+  "data": "2024-01-23",
+  "descricao": "Estacionamento",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 72.23
+ },
+ {
+  "data": "2024-01-23",
+  "descricao": "Assinatura curso",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 197.0
+ },
+ {
+  "data": "2024-01-24",
+  "descricao": "Condomínio",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 202.23
+ },
+ {
+  "data": "2024-01-25",
+  "descricao": "Academia",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 120.0
+ },
+ {
+  "data": "2024-01-25",
+  "descricao": "Canva Pro",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 55.0
+ },
+ {
+  "data": "2024-01-26",
+  "descricao": "Bar",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 128.3
+ },
+ {
+  "data": "2024-01-28",
+  "descricao": "Metrô/ônibus",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 131.13
+ },
+ {
+  "data": "2024-02-01",
+  "descricao": "Salário",
+  "categoria": "Renda",
+  "tipo": "Receita",
+  "valor": 5800.0
+ },
+ {
+  "data": "2024-02-02",
+  "descricao": "Uber",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 133.78
+ },
+ {
+  "data": "2024-02-02",
+  "descricao": "Metrô/ônibus",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 129.16
+ },
+ {
+  "data": "2024-02-02",
+  "descricao": "Canva Pro",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 55.0
+ },
+ {
+  "data": "2024-02-03",
+  "descricao": "Manutenção carro",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 120.35
+ },
+ {
+  "data": "2024-02-03",
+  "descricao": "Amazon Prime",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 19.0
+ },
+ {
+  "data": "2024-02-03",
+  "descricao": "Roupa",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 126.65
+ },
+ {
+  "data": "2024-02-05",
+  "descricao": "Exame",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 128.57
+ },
+ {
+  "data": "2024-02-05",
+  "descricao": "Assinatura curso",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 197.0
+ },
+ {
+  "data": "2024-02-06",
+  "descricao": "Feira livre",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 209.17
+ },
+ {
+  "data": "2024-02-06",
+  "descricao": "Presente",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 30.57
+ },
+ {
+  "data": "2024-02-08",
+  "descricao": "Mercearia",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 80.64
+ },
+ {
+  "data": "2024-02-09",
+  "descricao": "Açougue",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 138.49
+ },
+ {
+  "data": "2024-02-09",
+  "descricao": "Conserto",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 117.01
+ },
+ {
+  "data": "2024-02-11",
+  "descricao": "Farmácia",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 112.58
+ },
+ {
+  "data": "2024-02-12",
+  "descricao": "Condomínio",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 207.3
+ },
+ {
+  "data": "2024-02-13",
+  "descricao": "Plano de saúde",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 280.0
+ },
+ {
+  "data": "2024-02-16",
+  "descricao": "Academia",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 120.0
+ },
+ {
+  "data": "2024-02-16",
+  "descricao": "Spotify",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 21.0
+ },
+ {
+  "data": "2024-02-17",
+  "descricao": "Netflix",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 39.0
+ },
+ {
+  "data": "2024-02-18",
+  "descricao": "Supermercado",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 777.0
+ },
+ {
+  "data": "2024-02-18",
+  "descricao": "Restaurante",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 159.46
+ },
+ {
+  "data": "2024-02-19",
+  "descricao": "Estacionamento",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 48.44
+ },
+ {
+  "data": "2024-02-19",
+  "descricao": "Streaming",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 55.0
+ },
+ {
+  "data": "2024-02-19",
+  "descricao": "Curso online",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 89.0
+ },
+ {
+  "data": "2024-02-20",
+  "descricao": "Internet",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 126.48
+ },
+ {
+  "data": "2024-02-21",
+  "descricao": "Hortifruti",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 109.69
+ },
+ {
+  "data": "2024-02-22",
+  "descricao": "Conta de luz",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 208.42
+ },
+ {
+  "data": "2024-02-22",
+  "descricao": "Conta de água",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 98.01
+ },
+ {
+  "data": "2024-02-24",
+  "descricao": "Bar",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 123.12
+ },
+ {
+  "data": "2024-02-25",
+  "descricao": "iCloud",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 7.0
+ },
+ {
+  "data": "2024-02-27",
+  "descricao": "Aluguel",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 1800.0
+ },
+ {
+  "data": "2024-02-27",
+  "descricao": "Gasolina",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 388.46
+ },
+ {
+  "data": "2024-02-28",
+  "descricao": "Doação",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 98.55
+ },
+ {
+  "data": "2024-03-01",
+  "descricao": "Salário + Freela",
+  "categoria": "Renda",
+  "tipo": "Receita",
+  "valor": 6200.0
+ },
+ {
+  "data": "2024-03-01",
+  "descricao": "Aluguel",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 1800.0
+ },
+ {
+  "data": "2024-03-01",
+  "descricao": "Farmácia",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 115.35
+ },
+ {
+  "data": "2024-03-03",
+  "descricao": "Cinema",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 56.82
+ },
+ {
+  "data": "2024-03-04",
+  "descricao": "Condomínio",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 213.61
+ },
+ {
+  "data": "2024-03-04",
+  "descricao": "Internet",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 126.41
+ },
+ {
+  "data": "2024-03-04",
+  "descricao": "Mercearia",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 65.36
+ },
+ {
+  "data": "2024-03-04",
+  "descricao": "Consulta médica",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 171.01
+ },
+ {
+  "data": "2024-03-05",
+  "descricao": "Metrô/ônibus",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 144.36
+ },
+ {
+  "data": "2024-03-06",
+  "descricao": "Supermercado",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 708.7
+ },
+ {
+  "data": "2024-03-07",
+  "descricao": "Material didático",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 48.53
+ },
+ {
+  "data": "2024-03-07",
+  "descricao": "iCloud",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 7.0
+ },
+ {
+  "data": "2024-03-08",
+  "descricao": "Exame",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 47.89
+ },
+ {
+  "data": "2024-03-08",
+  "descricao": "Eletrônico",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 270.89
+ },
+ {
+  "data": "2024-03-09",
+  "descricao": "Açougue",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 155.03
+ },
+ {
+  "data": "2024-03-10",
+  "descricao": "Gasolina",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 407.05
+ },
+ {
+  "data": "2024-03-12",
+  "descricao": "Academia",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 120.0
+ },
+ {
+  "data": "2024-03-15",
+  "descricao": "Roupa",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 194.96
+ },
+ {
+  "data": "2024-03-16",
+  "descricao": "Viagem",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 102.71
+ },
+ {
+  "data": "2024-03-17",
+  "descricao": "Uber",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 138.92
+ },
+ {
+  "data": "2024-03-18",
+  "descricao": "Conta de luz",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 234.54
+ },
+ {
+  "data": "2024-03-18",
+  "descricao": "Streaming",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 55.0
+ },
+ {
+  "data": "2024-03-18",
+  "descricao": "Curso online",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 89.0
+ },
+ {
+  "data": "2024-03-18",
+  "descricao": "Assinatura curso",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 197.0
+ },
+ {
+  "data": "2024-03-19",
+  "descricao": "Doação",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 66.9
+ },
+ {
+  "data": "2024-03-23",
+  "descricao": "Amazon Prime",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 19.0
+ },
+ {
+  "data": "2024-03-23",
+  "descricao": "Canva Pro",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 55.0
+ },
+ {
+  "data": "2024-03-24",
+  "descricao": "Feira livre",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 198.15
+ },
+ {
+  "data": "2024-03-24",
+  "descricao": "Spotify",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 21.0
+ },
+ {
+  "data": "2024-03-25",
+  "descricao": "Conta de água",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 112.53
+ },
+ {
+  "data": "2024-03-25",
+  "descricao": "Hortifruti",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 109.16
+ },
+ {
+  "data": "2024-03-25",
+  "descricao": "Estacionamento",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 46.46
+ },
+ {
+  "data": "2024-03-25",
+  "descricao": "Bar",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 85.54
+ },
+ {
+  "data": "2024-03-25",
+  "descricao": "Netflix",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 39.0
+ },
+ {
+  "data": "2024-03-27",
+  "descricao": "Plano de saúde",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 280.0
+ },
+ {
+  "data": "2024-03-27",
+  "descricao": "Restaurante",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 237.11
+ },
+ {
+  "data": "2024-04-01",
+  "descricao": "Salário",
+  "categoria": "Renda",
+  "tipo": "Receita",
+  "valor": 5800.0
+ },
+ {
+  "data": "2024-04-01",
+  "descricao": "Roupa",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 162.18
+ },
+ {
+  "data": "2024-04-02",
+  "descricao": "Internet",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 120.67
+ },
+ {
+  "data": "2024-04-02",
+  "descricao": "Plano de saúde",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 280.0
+ },
+ {
+  "data": "2024-04-03",
+  "descricao": "Supermercado",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 821.93
+ },
+ {
+  "data": "2024-04-03",
+  "descricao": "Assinatura curso",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 197.0
+ },
+ {
+  "data": "2024-04-04",
+  "descricao": "Metrô/ônibus",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 136.28
+ },
+ {
+  "data": "2024-04-04",
+  "descricao": "Academia",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 120.0
+ },
+ {
+  "data": "2024-04-06",
+  "descricao": "Curso online",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 89.0
+ },
+ {
+  "data": "2024-04-07",
+  "descricao": "Açougue",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 146.76
+ },
+ {
+  "data": "2024-04-08",
+  "descricao": "Condomínio",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 204.6
+ },
+ {
+  "data": "2024-04-08",
+  "descricao": "Conta de água",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 108.93
+ },
+ {
+  "data": "2024-04-08",
+  "descricao": "Gasolina",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 377.62
+ },
+ {
+  "data": "2024-04-08",
+  "descricao": "Restaurante",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 257.87
+ },
+ {
+  "data": "2024-04-09",
+  "descricao": "Feira livre",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 200.57
+ },
+ {
+  "data": "2024-04-14",
+  "descricao": "Estacionamento",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 57.24
+ },
+ {
+  "data": "2024-04-15",
+  "descricao": "Streaming",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 55.0
+ },
+ {
+  "data": "2024-04-15",
+  "descricao": "Netflix",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 39.0
+ },
+ {
+  "data": "2024-04-16",
+  "descricao": "Doação",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 70.32
+ },
+ {
+  "data": "2024-04-18",
+  "descricao": "Aluguel",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 1800.0
+ },
+ {
+  "data": "2024-04-18",
+  "descricao": "Bar",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 95.33
+ },
+ {
+  "data": "2024-04-18",
+  "descricao": "Canva Pro",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 55.0
+ },
+ {
+  "data": "2024-04-19",
+  "descricao": "Mercearia",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 88.07
+ },
+ {
+  "data": "2024-04-21",
+  "descricao": "Consulta médica",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 235.68
+ },
+ {
+  "data": "2024-04-23",
+  "descricao": "Conta de luz",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 180.58
+ },
+ {
+  "data": "2024-04-24",
+  "descricao": "Hortifruti",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 96.18
+ },
+ {
+  "data": "2024-04-26",
+  "descricao": "Uber",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 134.92
+ },
+ {
+  "data": "2024-04-26",
+  "descricao": "Spotify",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 21.0
+ },
+ {
+  "data": "2024-04-28",
+  "descricao": "Farmácia",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 84.67
+ },
+ {
+  "data": "2024-04-28",
+  "descricao": "Amazon Prime",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 19.0
+ },
+ {
+  "data": "2024-04-28",
+  "descricao": "iCloud",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 7.0
+ },
+ {
+  "data": "2024-04-28",
+  "descricao": "Eletrônico",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 555.82
+ },
+ {
+  "data": "2024-05-01",
+  "descricao": "Salário",
+  "categoria": "Renda",
+  "tipo": "Receita",
+  "valor": 5800.0
+ },
+ {
+  "data": "2024-05-01",
+  "descricao": "Conta de luz",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 193.17
+ },
+ {
+  "data": "2024-05-02",
+  "descricao": "Condomínio",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 217.29
+ },
+ {
+  "data": "2024-05-02",
+  "descricao": "Gasolina",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 341.77
+ },
+ {
+  "data": "2024-05-02",
+  "descricao": "Streaming",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 55.0
+ },
+ {
+  "data": "2024-05-03",
+  "descricao": "Plano de saúde",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 280.0
+ },
+ {
+  "data": "2024-05-03",
+  "descricao": "Exame",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 13.7
+ },
+ {
+  "data": "2024-05-04",
+  "descricao": "Cinema",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 14.11
+ },
+ {
+  "data": "2024-05-04",
+  "descricao": "Eletrônico",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 337.8
+ },
+ {
+  "data": "2024-05-05",
+  "descricao": "Netflix",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 39.0
+ },
+ {
+  "data": "2024-05-07",
+  "descricao": "Aluguel",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 1800.0
+ },
+ {
+  "data": "2024-05-07",
+  "descricao": "Livros",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 112.16
+ },
+ {
+  "data": "2024-05-09",
+  "descricao": "Conta de água",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 119.56
+ },
+ {
+  "data": "2024-05-09",
+  "descricao": "Material didático",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 25.13
+ },
+ {
+  "data": "2024-05-09",
+  "descricao": "Doação",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 60.66
+ },
+ {
+  "data": "2024-05-10",
+  "descricao": "Mercearia",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 64.64
+ },
+ {
+  "data": "2024-05-10",
+  "descricao": "iCloud",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 7.0
+ },
+ {
+  "data": "2024-05-11",
+  "descricao": "Metrô/ônibus",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 122.44
+ },
+ {
+  "data": "2024-05-13",
+  "descricao": "Assinatura curso",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 197.0
+ },
+ {
+  "data": "2024-05-14",
+  "descricao": "Supermercado",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 741.0
+ },
+ {
+  "data": "2024-05-15",
+  "descricao": "Canva Pro",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 55.0
+ },
+ {
+  "data": "2024-05-15",
+  "descricao": "Roupa",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 21.76
+ },
+ {
+  "data": "2024-05-16",
+  "descricao": "Hortifruti",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 99.86
+ },
+ {
+  "data": "2024-05-17",
+  "descricao": "Estacionamento",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 63.37
+ },
+ {
+  "data": "2024-05-17",
+  "descricao": "Farmácia",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 115.16
+ },
+ {
+  "data": "2024-05-17",
+  "descricao": "Academia",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 120.0
+ },
+ {
+  "data": "2024-05-18",
+  "descricao": "Açougue",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 159.82
+ },
+ {
+  "data": "2024-05-18",
+  "descricao": "Uber",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 120.54
+ },
+ {
+  "data": "2024-05-19",
+  "descricao": "Restaurante",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 270.66
+ },
+ {
+  "data": "2024-05-19",
+  "descricao": "Viagem",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 335.38
+ },
+ {
+  "data": "2024-05-19",
+  "descricao": "Curso online",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 89.0
+ },
+ {
+  "data": "2024-05-20",
+  "descricao": "Bar",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 99.7
+ },
+ {
+  "data": "2024-05-21",
+  "descricao": "Amazon Prime",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 19.0
+ },
+ {
+  "data": "2024-05-22",
+  "descricao": "Spotify",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 21.0
+ },
+ {
+  "data": "2024-05-24",
+  "descricao": "Feira livre",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 207.86
+ },
+ {
+  "data": "2024-05-26",
+  "descricao": "Internet",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 129.27
+ },
+ {
+  "data": "2024-06-01",
+  "descricao": "Salário + Bônus",
+  "categoria": "Renda",
+  "tipo": "Receita",
+  "valor": 6800.0
+ },
+ {
+  "data": "2024-06-01",
+  "descricao": "Feira livre",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 206.16
+ },
+ {
+  "data": "2024-06-02",
+  "descricao": "Academia",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 120.0
+ },
+ {
+  "data": "2024-06-02",
+  "descricao": "Exame",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 165.87
+ },
+ {
+  "data": "2024-06-02",
+  "descricao": "iCloud",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 7.0
+ },
+ {
+  "data": "2024-06-02",
+  "descricao": "Roupa",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 128.94
+ },
+ {
+  "data": "2024-06-03",
+  "descricao": "Condomínio",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 218.67
+ },
+ {
+  "data": "2024-06-03",
+  "descricao": "Plano de saúde",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 280.0
+ },
+ {
+  "data": "2024-06-03",
+  "descricao": "Assinatura curso",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 197.0
+ },
+ {
+  "data": "2024-06-04",
+  "descricao": "Gasolina",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 346.45
+ },
+ {
+  "data": "2024-06-05",
+  "descricao": "Aluguel",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 1800.0
+ },
+ {
+  "data": "2024-06-05",
+  "descricao": "Mercearia",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 63.11
+ },
+ {
+  "data": "2024-06-05",
+  "descricao": "Uber",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 131.97
+ },
+ {
+  "data": "2024-06-05",
+  "descricao": "Spotify",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 21.0
+ },
+ {
+  "data": "2024-06-06",
+  "descricao": "Bar",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 158.38
+ },
+ {
+  "data": "2024-06-09",
+  "descricao": "Farmácia",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 98.05
+ },
+ {
+  "data": "2024-06-12",
+  "descricao": "Conta de luz",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 250.34
+ },
+ {
+  "data": "2024-06-12",
+  "descricao": "Doação",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 51.99
+ },
+ {
+  "data": "2024-06-15",
+  "descricao": "Conta de água",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 98.55
+ },
+ {
+  "data": "2024-06-18",
+  "descricao": "Açougue",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 146.71
+ },
+ {
+  "data": "2024-06-18",
+  "descricao": "Amazon Prime",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 19.0
+ },
+ {
+  "data": "2024-06-20",
+  "descricao": "Metrô/ônibus",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 130.89
+ },
+ {
+  "data": "2024-06-21",
+  "descricao": "Restaurante",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 243.38
+ },
+ {
+  "data": "2024-06-22",
+  "descricao": "Hortifruti",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 88.98
+ },
+ {
+  "data": "2024-06-22",
+  "descricao": "Estacionamento",
+  "categoria": "Transporte",
+  "tipo": "Despesa",
+  "valor": 53.72
+ },
+ {
+  "data": "2024-06-23",
+  "descricao": "Internet",
+  "categoria": "Moradia",
+  "tipo": "Despesa",
+  "valor": 128.34
+ },
+ {
+  "data": "2024-06-23",
+  "descricao": "Curso online",
+  "categoria": "Educação",
+  "tipo": "Despesa",
+  "valor": 89.0
+ },
+ {
+  "data": "2024-06-23",
+  "descricao": "Netflix",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 39.0
+ },
+ {
+  "data": "2024-06-24",
+  "descricao": "Streaming",
+  "categoria": "Lazer",
+  "tipo": "Despesa",
+  "valor": 55.0
+ },
+ {
+  "data": "2024-06-26",
+  "descricao": "Supermercado",
+  "categoria": "Alimentação",
+  "tipo": "Despesa",
+  "valor": 710.5
+ },
+ {
+  "data": "2024-06-27",
+  "descricao": "Canva Pro",
+  "categoria": "Assinaturas",
+  "tipo": "Despesa",
+  "valor": 55.0
+ },
+ {
+  "data": "2024-06-28",
+  "descricao": "Consulta médica",
+  "categoria": "Saúde",
+  "tipo": "Despesa",
+  "valor": 87.89
+ },
+ {
+  "data": "2024-06-28",
+  "descricao": "Conserto",
+  "categoria": "Outros",
+  "tipo": "Despesa",
+  "valor": 199.03
+ }
+]

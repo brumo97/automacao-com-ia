@@ -1,0 +1,34 @@
+RESUMO EXECUTIVO — REUNIÃO DA EQUIPE DE PROJETOS
+Data da reunião: 15 de março de 2024
+Fonte: entrada/Gestao_de_Projetos/reuniao_equipe_2024_03.txt
+
+PARTICIPANTES
+- Ana Paula (líder)
+- Carlos Mendes
+- Fernanda Lima
+- Ricardo Torres
+
+DECISÕES TOMADAS
+- Projeto Transformação Digital: prazo de entrega mantido para 30 de abril (status atual: 60% concluído).
+- Divisão de responsabilidades do Q2:
+  - Ana Paula: coordenação geral e comunicação com stakeholders
+  - Carlos: integração técnica e testes
+  - Fernanda: documentação e treinamento dos usuários
+  - Ricardo: suporte e monitoramento pós-implantação
+- Próxima reunião marcada para 29 de março, às 14h.
+
+PRÓXIMOS PASSOS
+| Ação                                  | Responsável    | Prazo        |
+|---------------------------------------|----------------|--------------|
+| Enviar relatório técnico              | Carlos Mendes  | 22/03        |
+| Finalizar manual do usuário           | Fernanda Lima  | 28/03        |
+| Participar da próxima reunião         | Toda a equipe  | 29/03, 14h   |
+
+PONTOS DE ATENÇÃO
+Registrados na ata:
+- Pendências principais do projeto: integração com o sistema legado e testes de homologação.
+
+Observações da análise (não constam na ata):
+- Restam 40% do projeto para cerca de 6 semanas até 30/04; a ata não registra plano de contingência caso a integração ou a homologação atrasem.
+- As duas pendências críticas e o relatório técnico estão todos com Carlos: concentração de carga e de risco em uma pessoa.
+- Ana Paula e Ricardo não têm entregas com prazo definido nesta ata.

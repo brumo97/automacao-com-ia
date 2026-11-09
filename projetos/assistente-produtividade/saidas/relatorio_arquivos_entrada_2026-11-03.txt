@@ -1,0 +1,27 @@
+RELATÓRIO DE ARQUIVOS — PASTA ENTRADA
+Gerado em: 03/11/2026
+Total: 7 arquivos em 4 subpastas (6 .txt, 1 .png)
+
+ARQUIVO                        SUBPASTA                 TIPO        TAMANHO   RESUMO EM /saidas
+reuniao_equipe_2024_03.txt     Gestao_de_Projetos       Ata         959 B     resumo_reuniao_equipe_2024_03.txt
+anotacoes_curso_ia.txt         Inteligencia_Artificial  Outro       1,5 KB    resumo_anotacoes_curso_ia.txt (novo)
+cowork_agente_local.png        Inteligencia_Artificial  Imagem      53 KB     resumo_cowork_agente_local.txt (novo)
+briefing_projeto_site.txt      Marketing_Digital        Briefing    1,3 KB    resumo_briefing_projeto_site.txt
+contrato_servicos.txt          Marketing_Digital        Contrato    1,5 KB    resumo_contrato.txt
+ideias_conteudo_redes.txt      Marketing_Digital        Outro       1,3 KB    resumo_ideias_conteudo_redes.txt (novo)
+relatorio_mensal_vendas.txt    Vendas                   Relatório   965 B     resumo_relatorio_mensal_vendas.txt
+
+DESTAQUES POR ARQUIVO
+- Ata (15/03/2024): projeto Transformação Digital 60% concluído, prazo 30/04; próxima reunião 29/03
+- Anotações IA: 4 aulas (fundamentos, LLMs, prompts, ferramentas); 3 pendências abertas
+- Imagem: diagrama do Cowork ligando /entrada, Skills, /saidas, Google Drive e Gmail
+- Briefing: redesign do site da Empresa XYZ, R$ 45.000, lançamento 25/05/2024, meta +25% leads
+- Contrato nº 2024/042: ABC Comércio x Agência XYZ, R$ 8.500/mês, 01/04/2024 a 31/03/2025, rescisão com 30 dias sem multa
+- Ideias de conteúdo: 7 peças (2 em produção, 2 bloqueadas aguardando aprovação)
+- Vendas fev/2024: R$ 647.800, 93,9% da meta, +12% a/a; Centro-Oeste em queda (-3%)
+
+OBSERVAÇÕES
+- Todos os documentos datam de março/2024 (exceto a imagem, material de aula)
+- Em /saidas há duplicidade: resumo_reuniao_equipe.txt e resumo_reuniao_equipe_2024_03.txt cobrem o mesmo arquivo
+- resumo_contrato.txt não segue o padrão de nome (seria resumo_contrato_servicos.txt)
+- Nenhum arquivo em /entrada foi alterado
