@@ -1,6 +1,7 @@
 # Automação com IA
 
 **Três projetos práticos de automação com Claude Cowork: organizar documentos, transformar conteúdos e analisar finanças.**
+**[▶ Ver o painel financeiro ao vivo](https://brumo97.github.io/automacao-com-ia/projetos/agente-financeiro/painel/index.html)**
 
 ![Painel financeiro: receitas, despesas e saldo por mês](projetos/agente-financeiro/painel/docs/imagens/receita-despesas-saldo.png)
 
